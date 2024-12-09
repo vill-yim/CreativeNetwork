@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
+
+
+.header {
+  margin: 0 auto;
+  width: 1600px;
+  height: 100%;
+  max-height: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content-logo {
+  width: 25%;
+  max-width: 100%;
+  max-height: 60px;
+  aspect-ratio: 1/1;
+}
+
+.logo {
+  align-items: center;
+  width: 100px;
+  background-size: contain;
+  background-position: center;
+  max-width: 100%;
+  margin: 0 15%;
+  aspect-ratio: 16/9;
+  background-repeat: no-repeat;
+  background-image: url(".././../../public/logos/logo-white.png");
+}
+
+/*-------------------------------------------------*/
+
+/*----------------------------------------------*/
+
+.nav-header {
+  width: 35%;
+  max-width: 100%;
+  display: flex;
+}
+
+.nav-header nav {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.nav-header ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-link-header{
+  width: 100px;
+  padding: .3rem;
+  display: flex;
+max-width: 100%;
+}
+
+.link-header {
+  width: 625%;
+  max-width: 100%;
+  font-size: clamp(1.1rem,1.2rem,1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: poppins;
+  display: flex;
+  color: #ffffff;
+  font-family: Protest Strike display;
+}
+
+.flag-down {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(".././../../public/extras/flag-down.png");
+}
+
+.redes {
+  width: 70%;
+  align-items: center;
+  max-width: 100%;
+}
+
+.redes ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.red-ig,
+.red-lkd,
+.red-x {
+  width: 300%;
+  height: 300%;
+  aspect-ratio: 1/1;
+  margin:0 5% ;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.red-ig {
+  background-image: url(".././../../public/redes/ig.png");
+}
+.red-lkd {
+  background-image: url(".././../../public/redes/lkdin.png");
+}
+.red-x {
+  background-image: url(".././../../public/redes/x.png");
+}
+
+
+
+
+/*----------------------------------------------*/.info-header {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 54px;
+}
+
+/*----------------------------------------------*/
+
+
+.btn-header {
+  width: 50%;
+  max-width: 100%;
+  padding: 0 .5rem;
+}
+
+.btn-header button{
+  width: 100%;
+height: 20%;
+padding: 0 .5rem;
+border: none;
+border-radius: 76px;
+height: 50px;
+  background: linear-gradient(to right, #FFD29A, #F7931A, #B47120);
+
+}

@@ -1,0 +1,38 @@
+.content-app {
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+    align-items: center;
+    height: 118px;
+  max-width: 100%;
+}
+
+.active-header {
+  backdrop-filter: blur(3px) brightness(0.95);
+}
+
+
+.cover{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.aboutus{
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.wemake,.ourwork{
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
