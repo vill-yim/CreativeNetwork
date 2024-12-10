@@ -1,7 +1,7 @@
 import { Sponsor } from "./Sponsor";
 import styles from "../../styles/home/cover.module.css";
 
-const Cover = () => {
+export const Cover = () => {
   return (
     <div className={styles["content-cover"]}>
       <div className={styles["content-titles"]}>
@@ -29,5 +29,3 @@ const Cover = () => {
     </div>
   );
 };
-
-export default Cover;

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../../styles/header/header.module.css";
 
-const Header = () => {
+export const Header = () => {
   return (
     <div className={styles["header"]}>
       <div className={styles["content-logo"]}>
@@ -48,5 +48,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

@@ -39,7 +39,7 @@ export const OurWork = () => {
       </div>
 
       <div className={styles["flexbox-ourwork"]}>
-        <div className={styles["descriptions-ourwork"]}>
+        <div className={styles["descriptions2-ourwork"]}>
           <div className={styles["title-description-ourwork"]}>
             <h3>Turning Last-Minute Panic into Industry Domination</h3>
           </div>
@@ -64,8 +64,14 @@ export const OurWork = () => {
           </div>
         </div>
         <div className={styles["image2-ourwork"]}>
-          <div className={styles["img-outwork"]}></div>
+          <div className={styles["img1-ourwork"]}></div>
         </div>
+      </div>
+
+     
+      <div className={styles["btn-call-cover"]}>
+          <button> Book a call</button>
+          <button> Book a call</button>
       </div>
     </div>
   );

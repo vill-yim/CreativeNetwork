@@ -36,9 +36,9 @@
   font-weight: 400;
   max-width: 100%;
   text-align: center;
-  line-height: 3rem;
+  line-height: 1.2;
   font-family: montserrat;
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-size: clamp(1.5r, 2vw, 2.5rem);
   color: #ffe5c4;
 }
 
