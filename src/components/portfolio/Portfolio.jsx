@@ -53,7 +53,7 @@ export const Portfolio = () => {
             {["Design", "Social", "Motion", "3D"].map((item, index) => (
               <li
                 key={index}
-                onClick={handleClick(index)}
+                onClick={() => handleClick(index)}
                 className={seleccionado === index ? styles["seleccionado"] : ""}
               >
                 {item}
