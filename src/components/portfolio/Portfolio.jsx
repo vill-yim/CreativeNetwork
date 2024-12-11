@@ -14,6 +14,10 @@ export const Portfolio = () => {
     showPortfolio(portfolio[i])
   };
 
+  const RenderPortfolio=()=>{
+    
+  }
+
   return (
     <div className={styles["content-portfolio"]}>
       <div className={styles["cover-portfolio"]}>
@@ -42,7 +46,9 @@ export const Portfolio = () => {
             ))}
           </ul>
         </div>
-        <div className={styles["portfolios"]}>{console.log(seleccionado,design,social,motion,d3)}</div>
+        <div className={styles["portfolios"]}>
+
+        </div>
       </div>
     </div>
   );
