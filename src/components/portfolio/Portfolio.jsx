@@ -14,9 +14,21 @@ export const Portfolio = () => {
     showPortfolio(portfolio[i])
   };
 
-  const RenderPortfolio=()=>{
-    
-  }
+const RenderPortfolios = () => {
+  return (
+    <div className={styles["proyectfolio"]}>
+    <div className={styles["img-proyectfolio"]}>
+
+    </div>
+    <div className={styles["info-proyectfolio"]}></div>
+
+
+      
+    </div>
+  )
+}
+
+
 
   return (
     <div className={styles["content-portfolio"]}>
