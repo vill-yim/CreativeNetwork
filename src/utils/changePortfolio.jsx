@@ -5,18 +5,11 @@ export const portfolioStore = create((set) => ({
   social: false,
   motion: false,
   d3: false,
-  showDesign: () =>
-    set({ design: true, Social: false, motion: false, d3: false }),
-  showSocial: () =>
+  showPortfolio: (portfolio) =>
     set({
-      social: true,
-      design: false,
-      Social: false,
-      motion: false,
-      d3: false,
+      design: portfolio === "design",
+      social: portfolio === "social",
+      motion: portfolio === "motion",
+      d3: portfolio === "d3",
     }),
-  showMotion: () =>
-    set({ motion: true, design: false, Social: false, d3: false }),
-  showD3: () =>
-    set({ design: false, Social: false, motion: false, d3: true }),
-}))
+}));

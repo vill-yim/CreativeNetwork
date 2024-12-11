@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "../../styles/header/header.module.css";
 
 export const Header = () => {
+  const navigate = useNavigate()
   return (
     <div className={styles["header"]}>
       <div className={styles["content-logo"]}>
@@ -13,21 +14,21 @@ export const Header = () => {
         <nav>
           <ul>
             <div className={styles["nav-link-header"]}>
-              <Link to={"/"} className={styles["link-header"]}>
+              <li onClick={()=>navigate('/')} to={"/"} className={styles["link-header"]}>
                 Home
-              </Link>
+              </li>
             </div>
 
             <div className={styles["nav-link-header"]}>
-              <Link to={"/"} className={styles["link-header"]}>
+              <li to={"/"} className={styles["link-header"]}>
                 Services <div className={styles["flag-down"]}></div>
-              </Link>
+              </li>
             </div>
 
             <div className={styles["nav-link-header"]}>
-              <Link to={"/portfolio"} className={styles["link-header"]}>
+              <li onClick={()=>{navigate('./portfolio')}} to={"/portfolio"} className={styles["link-header"]}>
                 Portfolio
-              </Link>
+              </li>
             </div>
           </ul>
         </nav>

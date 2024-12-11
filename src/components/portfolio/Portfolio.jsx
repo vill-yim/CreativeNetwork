@@ -5,32 +5,13 @@ import {portfolioStore} from  '../../utils/changePortfolio'
 
 export const Portfolio = () => {
   const [seleccionado, setSeleccionado] = useState(0);
-  const {social,motion,design,d3,showDesign,showMotion,showSocial,showD3} = portfolioStore()
+  const {social,motion,design,d3,showPortfolio} = portfolioStore()
 
 
-  const ShowPortfolio = () => {
-  
-    if (seleccionado === 0) {
-        console.log("design seleccionado");
-        return showDesign();
-      }
-      if (seleccionado === 1) {
-        console.log("social seleccionado");
-        return showSocial();
-      }
-      if (seleccionado === 2) {
-        console.log("motion seleccionado");
-        return showMotion();
-      }
-      if (seleccionado === 3) {
-        console.log("d3 seleccionado",d3);
-        return showD3();
-      }
-  };
-
-  const handleClick = (indice) => {
-    setSeleccionado(indice);
-    ShowPortfolio()
+  const handleClick = (i) => {
+    setSeleccionado(i);
+    const portfolio = ["design", "social", "motion", "d3"];
+    showPortfolio(portfolio[i])
   };
 
   return (
@@ -61,7 +42,7 @@ export const Portfolio = () => {
             ))}
           </ul>
         </div>
-        <div className={styles["portfolios"]}>{console.log(seleccionado)}</div>
+        <div className={styles["portfolios"]}>{console.log(seleccionado,design,social,motion,d3)}</div>
       </div>
     </div>
   );
