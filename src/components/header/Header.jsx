@@ -25,7 +25,7 @@ export const Header = () => {
             </div>
 
             <div className={styles["nav-link-header"]}>
-              <Link to={"/"} className={styles["link-header"]}>
+              <Link to={"/portfolio"} className={styles["link-header"]}>
                 Portfolio
               </Link>
             </div>

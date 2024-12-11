@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/home/outwork.module.css";
+import styles from "../../../styles/home/outwork.module.css";
 
 export const OurWork = () => {
   return (

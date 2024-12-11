@@ -1,4 +1,4 @@
-import styles from "../../styles/home/ourprocess.module.css";
+import styles from "../../../styles/home/ourprocess.module.css";
 
 export const OurProcess = () => {
   return (
@@ -33,7 +33,7 @@ export const OurProcess = () => {
               <div className={styles["content-bg-process-lupa"]}>
                 <div className={styles["bg-process-lupa"]}>
                   <div className={styles["bg-process"]}>
-                    <div className={styles["process-lupa"]}></div>
+                    <div className={styles["process-flecha"]}></div>
                   </div>
                 </div>
               </div>
@@ -45,10 +45,10 @@ export const OurProcess = () => {
           <div className={styles["step-3"]}>
             <div className={styles["n3-process"]}></div>
             <div className={styles["circle-process"]}>
-              <div className={styles["content-bg-process-lupa"]}>
+              <div className={styles["content-bg-process-bombillo"]}>
                 <div className={styles["bg-process-lupa"]}>
                   <div className={styles["bg-process"]}>
-                    <div className={styles["process-lupa"]}></div>
+                    <div className={styles["process-bombillo"]}></div>
                   </div>
                 </div>
               </div>
@@ -61,10 +61,10 @@ export const OurProcess = () => {
           <div className={styles["step-4"]}>
             <div className={styles["n4-process"]}></div>
             <div className={styles["circle-processb"]}>
-              <div className={styles["content-bg-process-lupa"]}>
+              <div className={styles["content-bg-process-media"]}>
                 <div className={styles["bg-process-lupa"]}>
                   <div className={styles["bg-process"]}>
-                    <div className={styles["process-lupa"]}></div>
+                    <div className={styles["process-media"]}></div>
                   </div>
                 </div>
               </div>
@@ -76,10 +76,10 @@ export const OurProcess = () => {
           <div className={styles["step-5"]}>
             <div className={styles["n5-process"]}></div>
             <div className={styles["circle-process"]}>
-              <div className={styles["content-bg-process-lupa"]}>
+              <div className={styles["content-bg-process-datos"]}>
                 <div className={styles["bg-process-lupa"]}>
                   <div className={styles["bg-process"]}>
-                    <div className={styles["process-lupa"]}></div>
+                    <div className={styles["process-datos"]}></div>
                   </div>
                 </div>
               </div>

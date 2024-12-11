@@ -1,5 +1,5 @@
 import { Sponsor } from "./Sponsor";
-import styles from "../../styles/home/cover.module.css";
+import styles from "../../../styles/home/cover.module.css";
 
 export const Cover = () => {
   return (

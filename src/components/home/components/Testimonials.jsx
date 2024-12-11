@@ -1,4 +1,4 @@
-import styles from "../../styles/home/testimonials.module.css";
+import styles from "../../../styles/home/testimonials.module.css";
 
 
 export const Testimonials = () => {

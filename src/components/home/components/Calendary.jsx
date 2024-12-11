@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/home/calendary.module.css";
+import styles from "../../../styles/home/calendary.module.css";
 
 export const Calendary = () => {
   return (

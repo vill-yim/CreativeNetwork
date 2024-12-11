@@ -5,7 +5,10 @@
 }
 
 .header {
+  background: #333333;
+  z-index: 10000;
   width: 100%;
+  position: fixed;
     align-items: center;
     height: 118px;
   max-width: 100%;
@@ -16,32 +19,16 @@
 }
 
 
-.cover{
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  justify-content: center;
-}
-
-.aboutus{
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.wemake,.ourwork,.calendary,.ourprocess{
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-
-.testimonials{
-  width: 100%;
-  background: #F7931A;
+.pages{
   display: flex;
-  justify-content: center;
+  padding-top:118px ;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
 }
+
 
 .footer{
   width: 100%;

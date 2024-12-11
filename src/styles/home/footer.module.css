@@ -1,10 +1,14 @@
 .content-footer{
     padding-top: 1rem;
+    height: 98%;
+    background: #333333;
     width: 1600px;
+    top: 0;
     max-width: 100%;
 display: flex;
 margin: 0 auto;
 align-items: center;
+border-bottom: 5px solid #F7931A; ;
 padding: 0 .5rem;
 justify-content: space-between;
 }

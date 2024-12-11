@@ -1,6 +1,6 @@
 import React from "react";
 import { TargetWeMake } from "./TargetWemake";
-import styles from "../../styles/home/wemake.module.css";
+import styles from "../../../styles/home/wemake.module.css";
 
 export const WeMake = () => {
   return (

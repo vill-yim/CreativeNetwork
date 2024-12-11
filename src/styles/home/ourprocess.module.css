@@ -160,6 +160,99 @@ align-items: center;
 
 
 
+.content-bg-process-flecha {
+    width: 230px;
+    aspect-ratio: 1/1;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    background-image: url("../../../public/process/flecha-bg.png");
+    margin: 0 auto;
+    margin-left: 8%;  
+    margin-top: 1rem;
+  }
+  
+  .process-flecha {
+    width: 80px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    background-image: url("../../../public/process/flecha.png");
+  }
+
+
+.content-bg-process-bombillo {
+    width: 230px;
+    aspect-ratio: 1/1;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    background-image: url("../../../public/process/bombillo-bg.png");
+    margin: 0 auto;
+    margin-left: 8%;  
+    margin-top: 1rem;
+  }
+  
+.process-bombillo {
+    width: 80px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    background-image: url("../../../public/process/bombillo.png");
+  }
+
+ 
+
+  .content-bg-process-media {
+    width: 230px;
+    aspect-ratio: 1/1;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    background-image: url("../../../public/process/media-bg.png");
+    margin: 0 auto;
+    margin-left: 8%;  
+    margin-top: 1rem;
+  }
+  
+  .process-media {
+    width: 80px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    background-image: url("../../../public/process/media.png");
+  }
+
+  .content-bg-process-datos {
+    width: 230px;
+    aspect-ratio: 1/1;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    background-image: url("../../../public/process/datos-bg.png");
+    margin: 0 auto;
+    margin-left: 8%;  
+    margin-top: 1rem;
+  }
+
+  .process-datos {
+    width: 80px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1/1;
+    background-image: url("../../../public/process/datos.png");
+  }
+        
+
+
 .text-process{
     min-height: 100px;
     margin-top: -1rem;

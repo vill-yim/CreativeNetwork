@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/home/about.module.css";
+import styles from "../../../styles/home/about.module.css";
 
 export const RenderAboutus = ({clase,title,text}) => {
   return (

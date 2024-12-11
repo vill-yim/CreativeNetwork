@@ -1,6 +1,6 @@
 import React from "react";
 import { RenderAboutus } from "./RenderAboutus";
-import styles from "../../styles/home/about.module.css";
+import styles from "../../../styles/home/about.module.css";
 
 export const Aboutus = () => {
   return (
