@@ -1,34 +1,31 @@
 import React from "react";
 import { useState } from "react";
 import styles from "../../styles/portfolio/portfolio.module.css";
-import {portfolioStore} from  '../../utils/changePortfolio'
+import { portfolioStore } from "../../utils/changePortfolio";
 
 export const Portfolio = () => {
   const [seleccionado, setSeleccionado] = useState(0);
-  const {social,motion,design,d3,showPortfolio} = portfolioStore()
-
+  const { social, motion, design, d3, showPortfolio } = portfolioStore();
 
   const handleClick = (i) => {
     setSeleccionado(i);
     const portfolio = ["design", "social", "motion", "d3"];
-    showPortfolio(portfolio[i])
+    showPortfolio(portfolio[i]);
   };
 
-const RenderPortfolios = () => {
-  return (
-    <div className={styles["proyectfolio"]}>
-    <div className={styles["img-proyectfolio"]}>
-
-    </div>
-    <div className={styles["info-proyectfolio"]}></div>
-
-
-      
-    </div>
-  )
-}
-
-
+  const RenderPortfolios = ({name,type}) => {
+    return (
+      <div className={styles["proyectfolio"]}>
+        <div className={styles["img-proyectfolio"]}>
+          <div className={styles["img"]}></div>
+        </div>
+        <div className={styles["info-proyectfolio"]}>
+          <div className={styles["name-proyectfolio"]}> {name}</div>
+          <div className={styles["type-proyectfolio"]}>{type}</div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div className={styles["content-portfolio"]}>
@@ -58,9 +55,12 @@ const RenderPortfolios = () => {
             ))}
           </ul>
         </div>
-        <div className={styles["portfolios"]}>
-
-        </div>
+        {design &&  (
+          <div className={styles["portfolios"]}>
+            <RenderPortfolios name={'Bitcoin Park'} type={'Poster'} />
+            <RenderPortfolios name={'Bitcoin Park'} type={'Poster'} />
+          </div>
+        )}
       </div>
     </div>
   );
