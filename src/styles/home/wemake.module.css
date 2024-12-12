@@ -3,12 +3,12 @@
   max-width: 100%;
   margin: 0 auto;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .title-wemake {
   font-family: "montserrat";
-  font-size: clamp(18px, 2vw, 54px);
+  font-size: clamp(26px, 2vw, 54px);
   text-align: center;
   margin: 0 auto;
   letter-spacing: -0.05;
@@ -55,6 +55,7 @@
 
 .title-target h3{
   width: 200px;
+  padding: 0 .2rem;
 margin: 0 auto;
 }
 
@@ -62,7 +63,7 @@ margin: 0 auto;
 .number-target {
   text-align: center;
   font-weight: 700;
-  margin: 5px auto;
+  margin: 15px auto;
   margin-bottom: 15px;
   min-height: 15px;
   font-family: poppins;
@@ -96,8 +97,7 @@ margin: 0 auto;
   width: 100%;
   height: 60px;
   max-width: 100%;
-  margin: 0 auto;
-  margin-top: 10px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +127,23 @@ margin: 0 auto;
  
   
   .contents-wemakes{
+    padding: 1rem;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: .8rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
   }
+
+.target-wemake {
+  position: relative;
+  display: flex;
+  margin: .3vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  width: 380px;
+  height: 280px;
+}
 }
