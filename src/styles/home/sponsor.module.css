@@ -1,7 +1,7 @@
 .content-sponsor{
     width:100%;
     height: 100%;
-max-height: 250px;
+max-height: 150px;
 overflow: hidden;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ overflow: hidden;
 
 .sponsors {
     display: flex;
-    height: 250px;
+    height: 150px;
     gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -33,15 +33,43 @@ overflow: hidden;
     }
   }
   
-  .luxor,
-  .minode,
-  .neutronpay,
-  .henger {
-    width: 350px;
-    height: 280px;
+  .minode
+  {
+    width: 200px;
+    aspect-ratio: 6/1;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size:contain;
+    flex-shrink: 0; /* Evita que los elementos se encojan */
+  }
+  
+  .luxor {
+    width: 200px;
+    aspect-ratio: 5/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    flex-shrink: 0; /* Evita que los elementos se encojan */
+  }
+  
+
+
+  .neutronpay {
+    width: 250px;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    flex-shrink: 0; /* Evita que los elementos se encojan */
+  }
+
+
+  .henger {
+    width: 350px;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
     flex-shrink: 0; /* Evita que los elementos se encojan */
   }
   
@@ -61,6 +89,8 @@ overflow: hidden;
   /* Duplicar los elementos para crear el carrusel infinito */
   .sponsors-wrapper {
     display: flex;
+    align-items: center;
+    gap: 1rem;
     animation: slide 25s linear infinite;
   }
   
@@ -68,7 +98,8 @@ overflow: hidden;
   .sponsors-wrapper .minode,
   .sponsors-wrapper .neutronpay,
   .sponsors-wrapper .henger {
-    flex-shrink: 0; /* Asegura que los elementos no se encojan */
+    align-items: center;
+    flex-shrink: 0;
   }
   
   /* Duplicar los elementos en el contenedor para evitar el "fin" */

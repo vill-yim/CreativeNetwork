@@ -2,12 +2,11 @@
   width: 1600px;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 60px;
   justify-content: center;
 }
 
 .title-about {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   text-align: center;
   margin: 0 auto;
   width: 1250px;
@@ -21,7 +20,7 @@
   font-style: bold;
   font-weight: 900;
   font-family: "Stretch Pro", sans-serif;
-  font-size: clamp(34px, 3vw, 64px);
+  font-size: clamp(18px, 2vw, 54px);
 }
 
 .renders-abouts {
@@ -35,16 +34,15 @@
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  margin: 4rem auto;
+  padding: .5rem 0;
+  margin: 5px auto;
 }
 
 .render-number-abouts {
-  width: 120px;
+  width: 45px;
   border-radius: 100%;
   background: #f7931a;
-  height:120px;
-  max-height: 150px;
-  max-width: 100%;
+aspect-ratio: 1/1;  
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -65,12 +63,11 @@
 .img-about1,
 .img-about2,
 .img-about3 {
-  width:90px;
-  margin-left: -5px;
+  width:30px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 90px;
+aspect-ratio: 1/1;
 }
 
 .render-title-abouts {
@@ -81,7 +78,7 @@ margin: 0 auto;
   max-width: 100%;
   color: #ffe5c4;
   text-align: center;
-  font-size: clamp(22px, 2vw, 40px);
+  font-size: clamp(18px, 1.2vw, 22px);
   margin-top: 10px;
 }
 
@@ -96,6 +93,8 @@ text-align: center;
   width: 950px;
   max-width: 100%;
   padding:.5rem 1rem;
+  font-size: clamp(14px,1vw,16px);
   margin: 0 auto;
   text-align: center;
 }
+

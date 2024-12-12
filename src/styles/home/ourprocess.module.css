@@ -12,8 +12,10 @@
   background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
   -webkit-background-clip: text;
   padding: 2rem 0;
-  color: transparent;
-  font-size: clamp(38px, 8vw, 74px);
+  font-family: montserrat;
+  color: transparent; 
+   font-size: clamp(28px, 3vw, 44px);
+
 }
 
 .ourprocess-steps {
@@ -38,8 +40,8 @@
 .step-3,
 .step-4,
 .step-5 {
-  width: 245px;
-  height: 520px;
+  width: 220px;
+  height: 420px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,8 +54,9 @@
 .n4-process,
 .n5-process {
     margin: 0 auto;
-    width: 227px;
+    width: 130px;
     height: 100vw;
+    background-repeat: no-repeat;
     padding-top: 1rem;
     max-width: 100%;
     background-size: contain;
@@ -85,8 +88,8 @@
 /*------------------------------*/
 
 .circle-process {
-  width: 250px;
-  height: 250px;
+  width: 215px;
+  height: 215px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -98,19 +101,18 @@ align-items: center;
 
 
 .circle-processb{
-    width: 250px;
-    height: 250px;
+    width: 215px;
+    height: 219px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
     border-bottom: 1px solid #ffd29a;
     border-radius: 100%;
-    border-radius: 100%;
 }
 
 .content-bg-process-lupa {
-  width: 230px;
+  width: 190px;
   aspect-ratio: 1/1;
   display: flex;
   background-repeat: no-repeat;
@@ -118,18 +120,17 @@ align-items: center;
   align-items: center;
   background-image: url("../../../public/process/lupa-bg.png");
   margin: 0 auto;
-  margin-left: 8%;  
+  margin-left: 10%;
   margin-top: 1rem;
 }
 
 .bg-process-lupa {
-  width: 160px;
-  height: 160px;
-  max-height: 100%;
-  margin: 0 auto 20px 25px;
+  width: 120px;
+  height: 120px;
+  margin-left: 14%;
+margin-top: -20px;
   aspect-ratio: 1/1;
   display: flex;
-  align-items: center;
   border-radius: 100%;
   justify-content: center;
   background: #ffffff;
@@ -150,7 +151,7 @@ align-items: center;
 }
 
 .process-lupa {
-  width: 80px;
+  width: 60px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: contain;
@@ -161,7 +162,7 @@ align-items: center;
 
 
 .content-bg-process-flecha {
-    width: 230px;
+    width: 190px;
     aspect-ratio: 1/1;
     display: flex;
     background-repeat: no-repeat;
@@ -169,12 +170,12 @@ align-items: center;
     align-items: center;
     background-image: url("../../../public/process/flecha-bg.png");
     margin: 0 auto;
-    margin-left: 8%;  
+    margin-left: 10%;  
     margin-top: 1rem;
   }
   
   .process-flecha {
-    width: 80px;
+    width: 60px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: contain;
@@ -184,7 +185,7 @@ align-items: center;
 
 
 .content-bg-process-bombillo {
-    width: 230px;
+    width: 190px;
     aspect-ratio: 1/1;
     display: flex;
     background-repeat: no-repeat;
@@ -192,8 +193,8 @@ align-items: center;
     align-items: center;
     background-image: url("../../../public/process/bombillo-bg.png");
     margin: 0 auto;
-    margin-left: 8%;  
-    margin-top: 1rem;
+    margin-left: 10%;  
+    margin-top: .5rem;
   }
   
 .process-bombillo {
@@ -208,7 +209,7 @@ align-items: center;
  
 
   .content-bg-process-media {
-    width: 230px;
+    width: 190px;
     aspect-ratio: 1/1;
     display: flex;
     background-repeat: no-repeat;
@@ -216,12 +217,12 @@ align-items: center;
     align-items: center;
     background-image: url("../../../public/process/media-bg.png");
     margin: 0 auto;
-    margin-left: 8%;  
-    margin-top: 1rem;
+    margin-left: 10%;  
+    margin-top: .5rem;
   }
   
   .process-media {
-    width: 80px;
+    width: 60px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: contain;
@@ -230,20 +231,19 @@ align-items: center;
   }
 
   .content-bg-process-datos {
-    width: 230px;
+    width: 190px;
     aspect-ratio: 1/1;
     display: flex;
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
     background-image: url("../../../public/process/datos-bg.png");
-    margin: 0 auto;
-    margin-left: 8%;  
+    margin-left: 10%;
     margin-top: 1rem;
   }
 
   .process-datos {
-    width: 80px;
+    width: 60px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: contain;
@@ -255,7 +255,7 @@ align-items: center;
 
 .text-process{
     min-height: 100px;
-    margin-top: -1rem;
+    margin-top: 1rem;
     text-align: center;
     padding: 0 1rem;
     font-size: clamp(14px,16px,18px);
@@ -264,9 +264,9 @@ align-items: center;
 
 .btn-call-cover {
   width: 100%;
-  height: 200px;
+  height: 80px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,8 +274,8 @@ align-items: center;
 }
 
 .btn-call-cover button {
-  width: 337px;
-  height: 130px;
+  width: 137px;
+  height: 80px;
   padding: 1rem;
   margin-bottom: 40px;
   background: linear-gradient(to bottom, #ffd29a, #f7931a, #b47120);
@@ -284,7 +284,7 @@ align-items: center;
   margin: 0 auto;
   border-radius: 76px;
   border: none;
-  font-size: clamp(48px, 2vw, 48px);
+  font-size: clamp(18px, 1.5vw, 18px);
   font-weight: 700;
   font-family: montserrat;
   color: #ffffff;

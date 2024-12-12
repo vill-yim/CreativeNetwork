@@ -10,7 +10,7 @@
 
 
 .calendary-title{
-font-size: clamp(34px,5vw,64px);
+font-size: clamp(24px,2vw,34px);
     font-family: montserrat;
     text-align: center;
     background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
@@ -26,7 +26,8 @@ font-size: clamp(34px,5vw,64px);
     margin: 0 auto;
     text-align: center;
     color: #ffd29a;
-font-size: clamp(18px,3vw,24px);
+    font-family: poppins;
+font-size: clamp(15px,1.2vw,18px);
 
 }
 

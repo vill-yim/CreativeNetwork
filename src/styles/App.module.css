@@ -5,12 +5,13 @@
 }
 
 .header {
-  background: #333333;
+  backdrop-filter: blur(25px) brightness(.66);
   z-index: 10000;
+  top: 0;
   width: 100%;
   position: fixed;
     align-items: center;
-    height: 118px;
+    height: 70px;
   max-width: 100%;
 }
 
@@ -21,7 +22,7 @@
 
 .pages{
   display: flex;
-  padding-top:118px ;
+  padding-top:80px ;
   width: 100%;
   margin: 0 auto;
   display: flex;

@@ -71,7 +71,6 @@ export const OurWork = () => {
      
       <div className={styles["btn-call-cover"]}>
           <button> Book a call</button>
-          <button> Book a call</button>
       </div>
     </div>
   );
