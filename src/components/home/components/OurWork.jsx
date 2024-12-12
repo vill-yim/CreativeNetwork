@@ -38,7 +38,7 @@ export const OurWork = () => {
         </div>
       </div>
 
-      <div className={styles["flexbox-ourwork"]}>
+      <div className={styles["flexbox-ourwork2"]}>
         <div className={styles["descriptions2-ourwork"]}>
           <div className={styles["title-description-ourwork"]}>
             <h3>Turning Last-Minute Panic into Industry Domination</h3>
