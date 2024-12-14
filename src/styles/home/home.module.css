@@ -12,9 +12,17 @@
     justify-content: center;
   }
   
-  .wemake,.ourwork,.calendary,.ourprocess{
+  .ourwork,.calendary,.ourprocess{
+    min-height: 100vh;
     width: 100%;
     margin: 0 auto;
+    justify-content: center;
+  }
+  .wemake{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
     justify-content: center;
   }
   
@@ -23,5 +31,7 @@
     width: 100%;
     background: #F7931A;
     display: flex;
+    min-height: 100vh;
+    align-items: center;
     justify-content: center;
   }

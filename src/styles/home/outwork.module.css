@@ -2,22 +2,21 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   justify-content: center;
 }
 
 .title-outwork {
+  font-family: "montserrat";
+  font-size: clamp(36px, 2vw, 54px);
+  text-align: center;
   margin: 0 auto;
-  width: 480px;
-  max-width: 100%;
-font-family: montserrat;
+  font-weight: 400;
+  letter-spacing: -0.05;
   background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: clamp(28px, 3vw, 44px);
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+  margin-top: 3rem;
 }
 
 .flexbox-ourwork {
@@ -136,7 +135,7 @@ font-family: montserrat;
 }
 
 .btn-call-cover button {
-  width: 137px;
+  width: 180px;
 height: 100%;
   max-width: 100%;
   padding: 1rem;
