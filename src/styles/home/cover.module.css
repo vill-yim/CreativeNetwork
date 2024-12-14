@@ -86,7 +86,7 @@
   width: 100%;
   background: none;
   border: none;
-  font-size: clamp(18px,2vw,34px);
+  font-size: clamp(16px,1.5vw,18px);
   font-weight: 700;
   font-family: montserrat;
   height: 100%;

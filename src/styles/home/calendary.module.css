@@ -8,6 +8,12 @@
     justify-content: center;
 }
 
+.calendary{
+    margin: 10px auto;
+
+}
+
+
 
 .calendary-title{
 font-size: clamp(24px,2vw,34px);

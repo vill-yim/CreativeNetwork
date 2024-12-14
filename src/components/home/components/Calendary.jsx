@@ -14,7 +14,11 @@ export const Calendary = () => {
         <p>Our mission is to amplify the voices building this world. By empowering Bitcoin businesses with authentic, impactful marketing, we help them communicate their vision, grow their reach, and inspire the communities that believe in this movement. This isn’t just marketing. This is a movement. A fight for truth, for freedom, and for a future worth believing in. We’re here to ensure that the ethos of Bitcoin, the ethos of sovereignty and self-determination resonates in every corner of the world.</p>
       </div>
 
+<div className={styles["calendary"]}>
       <Calendly />
+
+</div>
+
     </div>
   );
 };

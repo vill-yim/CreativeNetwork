@@ -137,3 +137,9 @@ font-family: montserrat;
     color: #000000;
   }
   
+@media (max-width:760px) {
+    
+    .target-testimonial{
+        margin: 0 auto;
+    }
+}

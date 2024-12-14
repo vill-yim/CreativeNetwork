@@ -3,6 +3,9 @@ import { InlineWidget } from 'react-calendly';
 
 export const Calendly = () => {
     return (
-        <InlineWidget url="https://calendly.com/creativenetwork" />
+        <InlineWidget 
+            url="https://calendly.com/creativenetwork/30min"
+            
+        />
     );
 };
