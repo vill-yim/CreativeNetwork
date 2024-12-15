@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../../styles/home/outwork.module.css";
+import { BtnSections } from "../buttons/BtnSections";
 
 export const OurWork = () => {
   return (
@@ -69,9 +70,9 @@ export const OurWork = () => {
       </div>
 
      
-      <div className={styles["btn-call-cover"]}>
-          <button> Book a call</button>
-      </div>
+     <div className={styles["btn-sec"]}>
+           <BtnSections />
+           </div>
     </div>
   );
 };

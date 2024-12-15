@@ -15,21 +15,21 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
     width: 1250px;
-    overflow: hidden; /* Oculta lo que está fuera del contenedor */
+    overflow: hidden; 
     position: relative;
   }
   
   .sponsors-wrapper {
     display: flex;
-    animation: slide 45s linear infinite; /* Animación continua */
+    animation: slide 45s linear infinite; 
   }
   
   @keyframes slide {
     0% {
-      transform: translateX(0); /* Comienza en la posición original */
+      transform: translateX(0); 
     }
     100% {
-      transform: translateX(-25%); /* Desplaza todo hacia la izquierda para crear el efecto infinito */
+      transform: translateX(-25%); 
     }
   }
   

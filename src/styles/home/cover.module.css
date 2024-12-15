@@ -56,41 +56,14 @@
   max-width: 100%;
 }
 
-
-
-.book-acall{
+.btn-cover1{
+  width: 100vw;
+  padding: 1rem 0;
   height: 90px;
-  width: 100%;
-  display: flex;
+  margin: 15px 0;
+  display: block;
   flex-direction: column;
-  max-height: 100%;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
-}
-
-
-.btn-call-cover{
-  width: 200px;
-  height: 70px;
-  max-width: 100%;
-  border-radius: 76px;
-  padding: 1rem;
-  background: linear-gradient(to bottom, #FFD29A, #F7931A, #B47120);  max-width: 100%;
-}
-
-.btn-call-cover button{
-  text-align: center;
-  align-self: center;
-  align-items: center;
-  width: 100%;
-  background: none;
-  border: none;
-  font-size: clamp(16px,1.5vw,18px);
-  font-weight: 700;
-  font-family: montserrat;
-  height: 100%;
-  color: #FFFFFF;
 }
 
 /*----------------*/

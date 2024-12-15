@@ -1,5 +1,6 @@
 import React from "react";
 import { RenderAboutus } from "./RenderAboutus";
+import {BtnSections} from "../buttons/BtnSections";
 import styles from "../../../styles/home/about.module.css";
 
 export const Aboutus = () => {
@@ -36,6 +37,10 @@ export const Aboutus = () => {
             "Many marketing agencies lack the technical and cultural understanding of Bitcoin. This forces companies to spend countless hours explaining blockchain mechanics, Lightning Network integration, or the ethos of decentralization. Instead of hitting the ground running, these agencies waste time on endless onboarding sessions, delaying progress and adding to the company’s workload."
           }
         />
+      </div>
+
+      <div className={styles["btn-sec"]}>
+        <BtnSections />
       </div>
     </div>
   );

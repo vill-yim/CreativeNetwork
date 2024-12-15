@@ -1,4 +1,5 @@
 import styles from "../../../styles/home/ourprocess.module.css";
+import {BtnSections} from '../buttons/BtnSections'
 
 export const OurProcess = () => {
   return (
@@ -91,8 +92,8 @@ export const OurProcess = () => {
         </div>
       </div>
 
-      <div className={styles["btn-call-cover"]}>
-        <button>Book a call</button>
+      <div className={styles["btn-sec"]}>
+      <BtnSections />
       </div>
     </div>
   );

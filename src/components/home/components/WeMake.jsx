@@ -1,5 +1,6 @@
 import React from "react";
 import { TargetWeMake } from "./TargetWemake";
+import {BtnSections} from "../buttons/BtnSections"
 import styles from "../../../styles/home/wemake.module.css";
 
 export const WeMake = () => {
@@ -55,15 +56,15 @@ export const WeMake = () => {
 
         <TargetWeMake
           number={"06"}
-          title={'A Partner Who “Gets It”'}
+          title={"A Partner Who “Gets It”"}
           text={
             "We’re not just another agency. We’re your partner in growth, with a proven track record of helping Bitcoin companies thrive. Our expertise, authenticity, and efficiency make us the go-to choice for businesses that demand more."
           }
         />
       </div>
 
-        <div className={styles["btn-call-cover"]}>
-          <button> Book a call</button>
+      <div className={styles["btn-sec"]}>
+        <BtnSections />
       </div>
     </div>
   );

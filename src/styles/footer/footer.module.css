@@ -32,7 +32,7 @@ justify-content: space-between;
 }
 
 .redes-footer{
-    width: 380px;
+    width: 40%;
     padding-left:  .2rem;
     max-width: 100%;
     display: flex;
@@ -64,12 +64,13 @@ justify-content: space-between;
 }
 
 .copy{
-    width:480px;
+    width:30%;
     max-width: 100%;
     font-size: clamp(12px,2vw,30px);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: center;
     margin: 0 auto;
+    justify-self: flex-end;
     color: #FFFFFF;
 }

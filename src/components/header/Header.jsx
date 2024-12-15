@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../../styles/header/header.module.css";
+import { BtnHeader } from "../home/buttons/BtnHeader";
 
 export const Header = () => {
   const navigate = useNavigate()
@@ -21,7 +22,7 @@ export const Header = () => {
         </div>
         
         <div className={styles["btn-header"]}>
-          <button>Contact Us</button>
+          <BtnHeader />
         </div>
       </div>
     </div>

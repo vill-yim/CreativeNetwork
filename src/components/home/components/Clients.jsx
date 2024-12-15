@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../../styles/home/sponsor.module.css";
 
-export const Sponsor = () => {
+export const Clients = () => {
   return (
     <div className={styles["content-sponsor"]}>
       <div className={styles["sponsors"]}>

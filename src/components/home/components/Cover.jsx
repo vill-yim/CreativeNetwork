@@ -1,5 +1,6 @@
-import { Sponsor } from "./Sponsor";
+import { Clients } from "./Clients";
 import styles from "../../../styles/home/cover.module.css";
+import { BtnCover } from "../buttons/btnCover";
 
 export const Cover = () => {
   return (
@@ -17,14 +18,12 @@ export const Cover = () => {
 
       <div className={styles["content-video"]}></div>
 
-      <div className={styles["book-acall"]}>
-        <div className={styles["btn-call-cover"]}>
-          <button> Book a call</button>
-        </div>
+      <div className={styles["btn-cover1"]}>
+        <BtnCover text={'Book a call'}/>
       </div>
 
       <div className={styles["sponsors"]}>
-        <Sponsor />
+        <Clients />
       </div>
     </div>
   );

@@ -10,7 +10,9 @@
 
 .calendary{
     margin: 10px auto;
-
+width: 1200px;
+max-width: 100%;
+max-height:100% ;
 }
 
 
@@ -33,7 +35,7 @@ font-size: clamp(24px,2vw,34px);
     text-align: center;
     color: #ffd29a;
     font-family: poppins;
-font-size: clamp(15px,1.2vw,18px);
+font-size: clamp(15px,1vw,16px);
 
 }
 
