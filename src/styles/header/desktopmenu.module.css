@@ -23,7 +23,6 @@
   
   
   .link-header {
-    width: 65px;
     max-width: 100%;
     font-size: clamp(1.1rem,1.2rem,1.5rem);
     text-decoration: none;
@@ -31,8 +30,8 @@
     font-family: poppins;
     cursor: pointer;
     display: flex;
-    margin: 0 1vw;
     justify-content: center;
+    margin: 0 2vw 0 0;
     color: #ffffff;
     font-family: Protest Strike display;
   }
