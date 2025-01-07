@@ -1,31 +1,25 @@
 import React from 'react'
+import styles from '../../styles/header/desktopmenu.module.css'
+import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div className={styles["nav-header"]}>
     <nav>
       <ul>
-        <div className={styles["nav-link-header"]}>
-          <li onClick={()=>navigate('/')} to={"/"} className={styles["link-header"]}>
+          <Link  to={"/"} className={styles["link-header"]}>
             Home
-          </li>
-        </div>
+          </Link>
 
-        <div className={styles["nav-link-header"]}>
-          <li to={"/"} className={styles["link-header"]}>
+          <Link to={"/services"} className={styles["link-header"]}>
             Services <div className={styles["flag-down"]}></div>
-          </li>
-        </div>
+          </Link>
 
-        <div className={styles["nav-link-header"]}>
-          <li onClick={()=>{navigate('./portfolio')}} to={"/portfolio"} className={styles["link-header"]}>
+          <Link  to={"/portfolio"} className={styles["link-header"]}>
             Portfolio
-          </li>
-        </div>
+          </Link>
       </ul>
     </nav>
   </div>    
 )
 }
-
-export default Navbar
