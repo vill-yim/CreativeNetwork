@@ -1,16 +1,13 @@
 import React from "react";
 import { RenderAboutus } from "./RenderAboutus";
-import {BtnSections} from "../buttons/BtnSections";
+import { BtnSections } from "../../buttons/BtnSections";
 import styles from "../../../styles/home/about.module.css";
 
 export const Aboutus = () => {
   return (
     <div className={styles["content-about"]}>
       <div className={styles["title-about"]}>
-        <h3>
-          CHALLENGES BITCOIN <br />
-          COMPANIES FACE
-        </h3>
+        <h3>CHALLENGES BITCOIN COMPANIES FACE</h3>
       </div>
 
       <div className={styles["renders-abouts"]}>

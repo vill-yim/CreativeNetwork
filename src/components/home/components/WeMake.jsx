@@ -1,16 +1,13 @@
 import React from "react";
 import { TargetWeMake } from "./TargetWemake";
-import {BtnSections} from "../buttons/BtnSections"
+import { BtnSections } from "../../buttons/BtnSections";
 import styles from "../../../styles/home/wemake.module.css";
 
 export const WeMake = () => {
   return (
     <div className={styles["section-wemake"]}>
       <div className={styles["title-wemake"]}>
-        <h4>
-          WHAT MAKE US <br />
-          DIFFERENT
-        </h4>
+        <h4>WHAT MAKE US DIFFERENT</h4>
       </div>
 
       <div className={styles["contents-wemakes"]}>

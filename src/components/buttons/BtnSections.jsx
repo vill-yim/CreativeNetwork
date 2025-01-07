@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/buttons/btnSection.module.css'
+import styles from '../../styles/buttons/btnSection.module.css'
 
 export const BtnSections = () => {
   return (

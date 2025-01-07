@@ -20,7 +20,7 @@
 }
 
 .contents-wemakes {
-  width: 1250px;
+  width: 1450px;
   max-width: 100%;
   display: flex;
   margin: 0 auto;
@@ -30,12 +30,12 @@
 
 .target-wemake {
   position: relative;
-  width: 310px;
+  width: 620px;
   display: flex;
   margin: .3vw;
   align-items: center;
   justify-content: center;
-  height: 265px;
+  height: 210px;
   border-radius: 40px;
   background: linear-gradient(45deg, #ffd29a, #ffb153, #f7931a, #d28324);
 }
@@ -54,7 +54,8 @@
 
 
 .title-target h3{
-  width: 200px;
+  width: 600px;
+  max-width: 100%;
   padding: 0 .2rem;
 margin: 0 auto;
 }
@@ -94,15 +95,20 @@ margin: 0 auto;
 }
 
 .btn-sec{
-  padding: 1rem 0;
-  margin: 20px 0;
+  padding: .5rem 0;
+  margin:  0 0 20px 0;
 }
 
 @media (max-width:765px) {
  
   
+.section-wemake{
+padding-top: 2rem;
+
+}
+
   .contents-wemakes{
-    padding: 1rem;
+    padding: 1rem 0;
     width: 100%;
     display: flex;
     justify-content: flex-start;

@@ -19,31 +19,31 @@
 }
 
 .flexbox-ourwork {
-  width: 980px;
+  width: 1280px;
   max-width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .flexbox-ourwork2 {
-  width: 980px;
+  width: 1280px;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 
 .image1-ourwork {
-  width: 450px;
+  width: 480px;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 11/6;
   max-width: 100%;
   background-image: url("../../../public/bgworks/image.png");
   display: flex;
@@ -55,6 +55,7 @@
 
 .img-ourwork {
   width: 150px;
+  margin-top: 3.5rem;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: contain;
@@ -65,12 +66,12 @@
 }
 
 .image2-ourwork {
-  width: 450px;
+  width: 480px;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 11/6;
   margin: 0 auto;
   max-width: 100%;
   background-image: url("../../../public/bgworks/image2.png");
@@ -94,7 +95,7 @@
 
 .descriptions-ourwork {
   margin: 0 auto;
-  width: 450px;
+  width: 750px;
   max-width: 100%;
   color: #ffe5c4;
   padding:0 0.5rem;
@@ -102,7 +103,7 @@
 }
 
 .descriptions2-ourwork {
-  width: 450px;
+  width: 750px;
   margin: 0 auto;
   padding:0 0.5rem;
   max-width: 100%;

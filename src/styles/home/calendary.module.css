@@ -27,6 +27,16 @@ font-size: clamp(24px,2vw,34px);
 }
 
 
+.calendly-title{
+    font-size: clamp(24px,2vw,34px);
+        font-family: montserrat;
+        text-align: center;
+        background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        color: transparent;
+    }
+    
 .calendary-text{
     width: 900px;
     max-width: 100%;
@@ -41,5 +51,5 @@ font-size: clamp(15px,1vw,16px);
 
 .calendary-text p{
 
-    margin: 15px auto;
+    margin: 15px 0 30px 0;
 }

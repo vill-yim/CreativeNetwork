@@ -6,6 +6,7 @@ import { Portfolio } from "./components/portfolio/Portfolio";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/home/Home";
 import { Footer } from "./components/footer/Footer";
+import { Services } from './components/services/Services';
 
 // Custom hook to detect scroll direction
 const useScrollDirection = () => {
@@ -60,6 +61,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/services" element={<Services/>}/>
         </Routes>
       </div>
       

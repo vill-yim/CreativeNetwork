@@ -15,6 +15,10 @@ export const Calendary = () => {
       </div>
 
 <div className={styles["calendary"]}>
+<div className={styles["calendly-title"]}>
+        <h3>Calendly</h3>
+      </div>
+
       <Calendly />
 
 </div>

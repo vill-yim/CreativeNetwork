@@ -95,7 +95,8 @@ justify-content: center;
 align-items: center;
   border-top: 1px solid #ffd29a;
   border-radius: 100%;
-  border-radius: 100%;
+    position: relative;
+    border-radius: 100%;
 }
 
 
@@ -108,7 +109,109 @@ align-items: center;
   align-items: center;
     border-bottom: 1px solid #ffd29a;
     border-radius: 100%;
+    position: relative;
 }
+
+.circle-process::before{
+  position: absolute;
+  margin-top: -15px;
+  content: "";
+  top: -8px;
+z-index: -1;
+  width: 2px;
+  height: 20px;
+background: #ffffff;
+
+}
+.circle-processb::before{
+  position: absolute;
+  content: "";
+  top: -18px;
+z-index: -1;
+  width: 2px;
+  height: 60px;
+background: #ffffff;
+
+}
+
+
+.pop1::after{
+  position: absolute;
+  content: "";
+  top: -30px;
+  border-radius: 100%;
+z-index: 1;
+  width: 10px;
+  height: 10px;
+background:#B4701E;
+
+}
+
+.pop2::after{
+  position: absolute;
+  content: "";
+  top: -18px;
+  border-radius: 100%;
+z-index: 1;
+  width: 10px;
+  height: 10px;
+background:#D28324;
+
+}
+
+
+.pop3::after{
+  position: absolute;
+  content: "";
+  top: -30px;
+  border-radius: 100%;
+z-index: 1;
+  width: 10px;
+  height: 10px;
+background: #F7931A;
+
+}
+
+.pop4::after{
+  position: absolute;
+  content: "";
+  top: -18px;
+  border-radius: 100%;
+z-index: 1;
+  width: 10px;
+  height: 10px;
+background: #FFB153;
+
+}
+
+
+.pop5::after{
+  position: absolute;
+  content: "";
+  top: -30px;
+  border-radius: 100%;
+z-index: 1;
+  width: 10px;
+  height: 10px;
+background: #FFD29A;
+
+}
+
+
+
+.pop6::after{
+  position: absolute;
+  content: "";
+  top: -10px;
+  border-radius: 100%;
+z-index: 1;
+  width: 10px;
+  height: 10px;
+background: #d28324;
+
+}
+
+
 
 .content-bg-process-lupa {
   width: 190px;
@@ -259,7 +362,9 @@ margin-top: -20px;
     padding: 0 1rem;
     font-size: clamp(14px,16px,18px);
     color: #FFE5C4;
+    position: relative;
 }
+
 
 .btn-call-cover {
   width: 100%;
@@ -287,4 +392,18 @@ margin-top: -20px;
   font-weight: 700;
   font-family: montserrat;
   color: #ffffff;
+}
+
+
+@media (max-width:760px) {
+  
+.text-process::before{
+  content: "";
+  margin-left: -35px;
+  position: absolute;
+  width: 65px;
+  bottom: 0;
+  height: 2px;
+  background: #FFB153;
+}
 }

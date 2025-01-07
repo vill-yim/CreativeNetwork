@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/buttons/buttoncover.module.css'
+import styles from '../../styles/buttons/buttoncover.module.css'
 
 export const BtnCover = ({text}) => {
   return (

@@ -1,17 +1,17 @@
 import { Clients } from "./Clients";
 import styles from "../../../styles/home/cover.module.css";
-import { BtnCover } from "../buttons/btnCover";
+import { BtnCover } from "../../buttons/btnCover";
 
 export const Cover = () => {
   return (
     <div className={styles["content-cover"]}>
       <div className={styles["content-titles"]}>
         <h1 className={styles["header-title"]}>
-          STOP TEACHING <br /> MARKETING AGENCIES <br />
+          STOP TEACHING MARKETING <br />  AGENCIES
           ABOUT BITCOIN BASICS
         </h1>
         <h2>
-          Partner with Expert Bitcoin Creatives Who HODL the Knowledge to <br />
+          Partner with Expert Bitcoin Creatives Who HODL the Knowledge to 
           Deliver Marketing That Works
         </h2>
       </div>

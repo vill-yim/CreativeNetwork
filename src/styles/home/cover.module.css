@@ -12,35 +12,30 @@
   max-width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
-  background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
+  padding: 15px 0 10px 0;
+  background: linear-gradient(to bottom, #ffd29a, #f7931a, #d28324);
   -webkit-background-clip: text;
   color: transparent;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: clamp(1.5rem, 1vw,1rem);
 }
 
 .header-title {
-  font-weight: 900;
-  letter-spacing: -0.02em;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   font-family: montserrat, sans-serif;
-  word-spacing: .5rem;
-  line-height: 0.9;
-  padding: 2px 0;
-  font-weight: 900;
 }
 
 .content-titles h2 {
   margin: 0 auto;
   width: 1200px;
-  font-weight: 400;
   max-width: 100%;
+  font-weight: 400;
   text-align: center;
   line-height: 1.2;
   font-family: montserrat;
-  font-size: clamp(1rem, 1.3vw, 2rem);
+  font-size: clamp(1rem, 1vw, 2rem);
   color: #ffe5c4;
 }
 
@@ -57,8 +52,8 @@
 }
 
 .btn-cover1{
-  width: 100vw;
-  padding: 1rem 0;
+  width: 100%; 
+  padding: .5rem 0;
   height: 90px;
   margin: 15px 0;
   display: block;
@@ -70,5 +65,5 @@
 .sponsors {
   width: 100%;
   justify-content: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }

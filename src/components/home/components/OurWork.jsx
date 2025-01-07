@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../styles/home/outwork.module.css";
-import { BtnSections } from "../buttons/BtnSections";
+import { BtnSections } from "../../buttons/BtnSections";
 
 export const OurWork = () => {
   return (

@@ -1,15 +1,15 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "../../styles/header/header.module.css";
-import { BtnHeader } from "../home/buttons/BtnHeader";
+import { BtnHeader } from "../buttons/BtnHeader";
 
 export const Header = () => {
   const navigate = useNavigate()
   return (
     <div className={styles["header"]}>
-      <div className={styles["content-logo"]}>
+      <Link to="/" className={styles["content-logo"]}>
         <div className={styles["logo"]}></div>
-      </div>
+      </Link>
 
     
       <div className={styles["info-header"]}>
@@ -22,7 +22,7 @@ export const Header = () => {
         </div>
         
         <div className={styles["btn-header"]}>
-          <BtnHeader />
+          <BtnHeader text={"Contact Us"}/>
         </div>
       </div>
     </div>
