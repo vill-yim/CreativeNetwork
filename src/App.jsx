@@ -7,6 +7,8 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/home/Home";
 import { Footer } from "./components/footer/Footer";
 import { Services } from './components/services/Services';
+import SideBar from './components/header/SideBar';
+import { sidebarStore } from './utils/sidebarstore';
 
 // Custom hook to detect scroll direction
 const useScrollDirection = () => {
@@ -40,7 +42,7 @@ const useScrollDirection = () => {
 
 function App() {
   const scrollDirection = useScrollDirection();
-
+const {showMenu} = sidebarStore()
   return (
     <div className={styles["content-app"]}>
       <AnimatePresence>
@@ -53,6 +55,7 @@ function App() {
             transition={{ type: "tween", duration: 0.3 }}
           >
             <Header />
+            {showMenu && <SideBar /> }
           </motion.div>
         )}
       </AnimatePresence>

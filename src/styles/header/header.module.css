@@ -29,7 +29,22 @@
 }
 
 /*-------------------------------------------------*/
+.menu-mobile{
+  display: none;
+}
 
+@media (max-width:680px) {
+  .menu-header{
+    display: none;
+  }
+
+  .menu-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+}
 /*----------------------------------------------*/
 
 .nav-header {

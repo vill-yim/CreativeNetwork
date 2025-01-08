@@ -1,22 +1,21 @@
-import React from 'react'
+import React from "react";
 import styles from "../../styles/services/services.module.css";
 
-export const TargetService = () => {
+export const TargetService = ({ image_slider, name_slider }) => {
   return (
-<div className={styles["slider"]}>
-<div className={styles["target-slider"]}>
-<div className={styles["img-slider"]}>
-<div
-    className={styles["img-slider"]}
-    style={{ backgroundImage: `url(${image_slider})` }}
-  ></div>
-</div>
-<div className={styles["text-slider"]}>{text_slider}</div>
-
-
-</div>
-
-</div>  )
-}
-
-export default TargetService
+    <div className={styles["target-slider"]}>
+     <div className={styles["img-slider"]}>
+        <div
+          className={styles["img-slider-background"]}
+          style={{ backgroundImage: `url(${image_slider})` }}
+        ></div>
+      </div> 
+      <div className={styles["content-target-slider"]}>
+    
+      <div className={styles["name-slider"]}>
+        <h4>{name_slider}</h4>
+      </div>
+     </div>
+    </div>
+  );
+};
