@@ -1,41 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../../styles/header/sidebar.module.css";
-import { sidebarStore } from "../../utils/sidebarstore";
+import { serviceStore, allServiceStore } from "../../utils/serviceStore";
 
-const SideBar = () => {
-  const { setShowMenu } = sidebarStore();
+export const SideBar = () => {
+  const { setServices, services } = serviceStore();
+  const { allServices } = allServiceStore();
+  const [seleccionado, setSeleccionado] = useState(0);
+  const [serviceSeleccionado, setServiceSeleccionado] = useState(null);
+
+  const handleClick = (idx, item) => {
+    setSeleccionado(idx);
+    if (item === "Services") {
+      setServices((prev) => !prev);
+    }
+  };
+
+  const handleServiceClick = (idx) => {
+    setServiceSeleccionado(idx);
+    const serviceKeys = ["youtube", "studio", "uxui", "organic", "web"];
+    allServices(serviceKeys[idx]);
+  };
+
   return (
     <div className={styles["sidebar"]}>
-      <nav>
+      <nav className={styles["nav-side"]}>
         <ul>
-          <Link
-            to={"/"}
-            className={styles["link-header"]}
-            onClick={() => sidebarStore()}
-          >
-            Home
-          </Link>
-
-          <Link
-            to={"/services"}
-            className={styles["link-header"]}
-            onClick={() => sidebarStore()}
-          >
-            Services <div className={styles["flag-down"]}></div>
-          </Link>
-
-          <Link
-            to={"/portfolio"}
-            className={styles["link-header"]}
-            onClick={() => sidebarStore()}
-          >
-            Portfolio
-          </Link>
+          {["Home", "Services", "Portfolio"].map((item, idx) => (
+            <Link
+              key={idx}
+              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+              className={
+                seleccionado === idx
+                  ? styles["seleccionado-side"]
+                  : styles["link-side"]
+              }
+              onClick={() => handleClick(idx, item)}
+            >
+              {item}
+              {item === "Services" &&  (
+                <>
+                  <div className={styles["flag-down"]}></div>
+                  {item && services && (
+                    <div className={styles["list-service"]}>
+                      <ul>
+                        {[
+                          "Youtube",
+                          "Creative Studio",
+                          "Ux/ui",
+                          "Organic",
+                          "Web Design",
+                        ].map((subItem, subIdx) => (
+                          <li
+                            key={subIdx}
+                            onClick={() => handleServiceClick(subIdx)}
+                            className={
+                              serviceSeleccionado === subIdx
+                                ? styles["seleccionado-service"]
+                                : styles["link-service"]
+                            }
+                          >
+                            {subItem}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </>
+              )}
+            </Link>
+          ))}
         </ul>
       </nav>
     </div>
   );
 };
-
-export default SideBar;

@@ -1,9 +1,9 @@
 import { create } from "zustand";
 
 export const sidebarStore = create((set) => ({
-  showMenu: false,
-  setShowMenu: () =>
+  sideBar: false,
+  setSideBar: () =>
     set((state) => ({
-      showMenu: !state.showMenu,
+      sideBar: !state.sideBar,
     })),
 }));

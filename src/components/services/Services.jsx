@@ -1,9 +1,12 @@
 import Slider from "react-slick";
-import React from "react";
+import React, { useEffect } from "react";
 import { BtnHeader } from "../buttons/BtnHeader";
 import { RenderService } from "./RenderService";
 import styles from "../../styles/services/services.module.css";
 import { TargetService } from "./TargetService";
+import { allServiceStore } from "../../utils/serviceStore";
+
+
 
 
 const settings = {
@@ -93,9 +96,16 @@ const RenderServiceUxuiTargets = () => {
 };
 
 export const Services = () => {
+const {youtube,studio,web,uxui,organic,allServices}= allServiceStore()
+
+useEffect(()=>{
+  allServices("youtube")
+},[])
+
+
   return (
     <div className={styles["content-services"]}>
-     {false  && <RenderService
+     {youtube  && <RenderService
         title_service={"YOUTUBE"}
         btnacction={<BtnHeader text={"Book a call"} />}
         text_service={"Professional video editing for every content type"}
@@ -103,7 +113,7 @@ export const Services = () => {
         title_slider={"METRICS WE OPTIMIZE"}
         sliders={ <RenderServiceYoutubeTargets /> }
       />}
-{false &&
+{studio &&
 <RenderService
         title_service={"CREATIVE STUDIO"}
         btnacction={<BtnHeader text={"Book a call"} />}
@@ -113,7 +123,7 @@ export const Services = () => {
         sliders={ <RenderServiceCreativeTargets /> }
       />}
 
-{ false && <RenderService
+{ organic && <RenderService
         title_service={"ORGANIC GROWTH"}
         text_service={"Effective marketing strategies for sustainable growth"}
         btnacction={<BtnHeader text={"Book a call"} />}
@@ -121,7 +131,7 @@ export const Services = () => {
         title_slider={"SERVICES WE OFFER"}
         sliders={ <RenderServiceOrganicTargets /> }
       />}
-{ false && <RenderService
+{ uxui && <RenderService
         title_service={"UX/UI"}
         text_service={"Seamless UX/UI designs for web and mobile apps"}
         btnacction={<BtnHeader text={"Book a call"} />}
@@ -130,7 +140,7 @@ export const Services = () => {
         sliders={ <RenderServiceUxuiTargets /> }
       />}
 
-{ <RenderService
+{web && <RenderService
         title_service={"WEB DESIGN"}
         text_service={"Lorem impsu dolorem rem, asomary amaleta eslomota aramasta"}
         btnacction={<BtnHeader text={"Book a call"} />}

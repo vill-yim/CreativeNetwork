@@ -81,6 +81,7 @@ max-width: 100%;
   font-family: poppins;
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   color: #ffffff;
   font-family: Protest Strike display;
 }

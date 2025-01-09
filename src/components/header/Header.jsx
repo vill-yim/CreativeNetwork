@@ -7,12 +7,12 @@ import { sidebarStore } from "../../utils/sidebarstore";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const setShowMenu = sidebarStore((state) => state.setShowMenu)
+  const setSideBar = sidebarStore((state) => state.setSideBar)
   return (
     <div className={styles["header"]}>
       <div
         className={styles["menu-mobile"]}
-        onClick={() => setShowMenu()}
+        onClick={() => setSideBar()}
       >
         <img
           src="https://img.icons8.com/ios-filled/30/FFFFFF/menu--v1.png"
