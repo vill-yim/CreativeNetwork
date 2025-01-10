@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: "CreatoDisplayBold";
-  src: url("../../../public/font/CreatoDisplay-Bold.otf") format("opentype");
+  src: url("/font/CreatoDisplay-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "CreatoDisplayMedium";
-  src: url("../../../public/font/CreatoDisplay-Medium.otf") format("opentype");
+  src: url("/font/CreatoDisplay-Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "StretchPro";
-  src: url("../../../public/font/StretchPro.otf") format("opentype");
+  src: url("/font/StretchPro.otf") format("opentype");
 }
 
 *{
