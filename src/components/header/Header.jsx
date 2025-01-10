@@ -7,13 +7,10 @@ import { sidebarStore } from "../../utils/sidebarstore";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const setSideBar = sidebarStore((state) => state.setSideBar)
+  const setSideBar = sidebarStore((state) => state.setSideBar);
   return (
     <div className={styles["header"]}>
-      <div
-        className={styles["menu-mobile"]}
-        onClick={() => setSideBar()}
-      >
+      <div className={styles["menu-mobile"]} onClick={() => setSideBar()}>
         <img
           src="https://img.icons8.com/ios-filled/30/FFFFFF/menu--v1.png"
           alt=""
@@ -31,9 +28,21 @@ export const Header = () => {
       <div className={styles["info-header"]}>
         <div className={styles["redes"]}>
           <ul>
-            <li className={styles["red-ig"]}></li>
-            <li className={styles["red-lkd"]}></li>
-            <li className={styles["red-x"]}></li>
+            <a
+              target="blank"
+              href="https://www.instagram.com/creativenetwork_21/"
+              className={styles["red-ig"]}
+            ></a>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/company/creative-network-live/"
+              className={styles["red-lkd"]}
+            ></a>
+            <a
+              target="blank"
+              href="https://twitter.com/cnl_btc21"
+              className={styles["red-x"]}
+            ></a>
           </ul>
         </div>
 
