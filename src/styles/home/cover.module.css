@@ -9,9 +9,11 @@
 
 .content-titles {
   width: 1250px;
+  padding:  0 .5rem;
   max-width: 100%;
   text-align: center;
   margin: 0 auto;
+
   padding: 15px 0 10px 0;
   background: linear-gradient(to bottom, #ffd29a, #f7931a, #d28324);
   -webkit-background-clip: text;
@@ -21,10 +23,10 @@
 }
 
 .header-title {
-  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  font-family: montserrat, sans-serif;
+  font-family: StretchPro;
+  
 }
 
 .content-titles h2 {
@@ -34,28 +36,27 @@
   font-weight: 400;
   text-align: center;
   line-height: 1.2;
-  font-family: montserrat;
+  font-family: CreatoDisplayMedium;
   font-size: clamp(1rem, 1vw, 2rem);
   color: #ffe5c4;
 }
 
 .content-video {
-  width: 600px;
+  width: 920px;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   aspect-ratio: 12/6;
-  background: #d4d4d2;
+  background: #262424d2;
   border-radius: 40px;
   max-width: 100%;
 }
 
 .btn-cover1{
   width: 100%; 
-  padding: .5rem 0;
   height: 90px;
-  margin: 15px 0;
+  padding-top: .95rem;
   display: block;
   flex-direction: column;
   justify-content: center;

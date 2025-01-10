@@ -1,21 +1,36 @@
+:root {
+  --scroll-size: 12px;
+  --scroll-radius: 20px;
+  --scroll-track: rgb(0 0 0 / 40%);
+  --scroll-thumb: linear-gradient(45deg,
+      rgba(255, 255, 255, 0.25) 20%, transparent 20%,
+      transparent 40%, rgba(255, 255, 255, 0.25) 40%,
+      rgba(255, 255, 255, 0.25) 60%, transparent 60%,
+      transparent 80%, rgba(255, 255, 255, 0.25) 80%);
+  --scroll-thumb-color: #f97316;
+}
+
 .section-wemake {
   width: 1600px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .title-wemake {
-  font-family: "montserrat";
   font-size: clamp(26px, 2vw, 54px);
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto 20px auto;
   letter-spacing: -0.05;
   background: linear-gradient(to top, #ffd29a, #f7931a, #d28324);
   -webkit-background-clip: text;
   color: transparent;
+  font-family: StretchPro;
+
+  font-kerning: none;
+  font-variant-ligatures: none;
   margin-bottom: 20px;
 }
 
@@ -29,7 +44,7 @@
 }
 
 .target-wemake {
-  height: 210px;
+  height: 16vw;
   width: 620px;
   margin: .3vw;
   position: relative;
@@ -47,9 +62,9 @@
   flex-direction: column;
   align-items: bottom;
   justify-content: center;
-  width: 98%;
-  height: 98%;
-  border-radius: 40px;
+  width: 605px;
+  height: 95%;
+  border-radius: 36px;
 }
 
 
@@ -57,26 +72,34 @@
   width: 600px;
   max-width: 100%;
   padding: 0 .2rem;
-margin: 0 auto;
+margin: 10px auto;
+font-weight: 900;
 }
 
 
 .number-target {
   text-align: center;
-  font-weight: 700;
-  margin: 15px auto;
-  margin-bottom: 15px;
-  min-height: 15px;
-  font-family: poppins;
-  font-size: clamp(14px, 1.5vw, 24px);
-  color: #ffe5c4;
+  min-height: 25px;
+}
+
+.number-target h4{
+    font-kerning: none;
+    font-variant-ligatures: none;
+    font-size: clamp(14px,1.5vw, 24px);
+    font-family: StretchPro;
+    margin: 25px auto;
+    color:#ffe5c4;
+    font-weight: 400;
+
 }
 
 .title-target {
-  font-weight: 400;
+  font-family: CreatoDisplayBold;
+  font-kerning: none;
   text-align: center;
-  font-family: montserrat;
-  font-size: clamp(14px, 1vw, 22px);
+  font-weight: 900;
+  font-variant-ligatures: none;
+  font-size: clamp(14px, 1.5vw, 22px);
   color: #ffe5c4;
 }
 
@@ -88,8 +111,13 @@ margin: 0 auto;
 }
 
 .text-target p {
-  font-family: poppins;
-  font-size: clamp(12px, 1vw, 22px);
+  font-weight: 400;
+  font-family: CreatoDisplayMedium;
+  font-kerning: none;
+  letter-spacing: .1rem;
+  word-spacing: .01rem;
+  font-variant-ligatures: none;
+  font-size: clamp(14px, 1.15vw, 22px);
   line-height: 1;
   padding: 1rem;
 }
@@ -117,11 +145,28 @@ padding-top: 2rem;
     flex-wrap: nowrap;
   }
 
-.target-wemake {
+  .contents-wemakes::-webkit-scrollbar {
+    width: var(--scroll-size, 10px);
+    height: var(--scroll-size, 10px);
+  }
+  .contents-wemakes::-webkit-scrollbar-track {
+    background-color: var(--scroll-track, transparent);
+    border-radius: var(--scroll-track-radius, var(--scroll-radius));
+  }
+  .contents-wemakes::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color, grey);
+    background-image: var(--scroll-thumb, none);
+    border-radius: var(--scroll-thumb-radius, var(--scroll-radius));
+  }
+  .contents-wemakes::-webkit-scrollbar-button {
+    border-radius: 20px;
+  }
+
+  .target-wemake {
+  width: 360px;
   position: relative;
   display: flex;
   margin: .3vw;
-  width: 360px;
   height:360px;
   align-items: center;
   justify-content: center;
@@ -129,7 +174,9 @@ padding-top: 2rem;
 }
 
 .content-target{
+  width: 97%;
+  height: 97%;
   padding-top: 2rem;
-
+border-radius: 38px;
 }
 }

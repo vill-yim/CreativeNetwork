@@ -47,60 +47,6 @@
 }
 /*----------------------------------------------*/
 
-.nav-header {
-  width: 35%;
-  max-width: 100%;
-  display: flex;
-}
-
-.nav-header nav {
-  margin: 0 auto;
-  width: 80%;
-}
-
-.nav-header ul {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-  justify-content: space-between;
-}
-
-.nav-link-header{
-  width: 100px;
-  padding: .3rem;
-  display: flex;
-max-width: 100%;
-}
-
-.link-header {
-  width: 625%;
-  max-width: 100%;
-  font-size: clamp(1.1rem,1.2rem,1.5rem);
-  text-decoration: none;
-  font-weight: 400;
-  font-family: poppins;
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-  color: #ffffff;
-  font-family: Protest Strike display;
-}
-
-.link-header:hover{
-  cursor: pointer;
-  color: #f7931a;
-  transition: all 0.5s ease-out;
-}
-
-.flag-down {
-  width: 20px;
-  height: 20px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(".././../../public/extras/flag-down.png");
-}
-
 .redes {
   width: 50%;
   align-items: center;

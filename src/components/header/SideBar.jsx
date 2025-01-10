@@ -5,9 +5,9 @@ import { serviceStore, allServiceStore } from "../../utils/serviceStore";
 
 export const SideBar = () => {
   const { setServices, services } = serviceStore();
-  const { allServices } = allServiceStore();
-  const [seleccionado, setSeleccionado] = useState(0);
-  const [serviceSeleccionado, setServiceSeleccionado] = useState(null);
+  const { allServices,youtube,studio,uxui,organic,web } = allServiceStore();
+  const [seleccionado, setSeleccionado] = useState( youtube | studio | uxui | organic | web );
+  const [serviceSeleccionado, setServiceSeleccionado] = useState();
 
   const handleClick = (idx, item) => {
     setSeleccionado(idx);
@@ -30,18 +30,20 @@ export const SideBar = () => {
             <Link
               key={idx}
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className={
-                seleccionado === idx
-                  ? styles["seleccionado-side"]
-                  : styles["link-side"]
-              }
+              className={`${seleccionado === idx ? styles["seleccionado-side"] : styles["link-side"]} ${
+                item === "Services" ? styles["hover-services"] : ""
+              }`}
               onClick={() => handleClick(idx, item)}
             >
               {item}
               {item === "Services" &&  (
                 <>
+                <>
                   <div className={styles["flag-down"]}></div>
-                  {item && services && (
+                 
+                </>
+                
+                {item && services && (
                     <div className={styles["list-service"]}>
                       <ul>
                         {[

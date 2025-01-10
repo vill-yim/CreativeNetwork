@@ -7,7 +7,7 @@ export const Calendary = () => {
   return (
     <div className={styles["calendary-content"]}>
       <div className={styles["calendary-title"]}>
-        <h3>ABOUT US</h3>
+        <h3>About Us</h3>
       </div>
       <div className={styles["calendary-text"]}>
         <p>At the heart of everything we do is the unwavering belief in a future shaped by Bitcoin. A world where decentralization empowers individuals, sovereignty replaces control, and trust is no longer something to ask for but something embedded in the code. We see a future where innovation transcends barriers, where freedom flourishes, and where the financial system aligns with the principles of fairness and transparency.</p>
