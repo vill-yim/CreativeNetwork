@@ -33,7 +33,7 @@ overflow: hidden;
     }
   }
   
-  .minode
+  .mynode
   {
     width: 200px;
     aspect-ratio: 6/1;
@@ -64,8 +64,8 @@ overflow: hidden;
   }
 
 
-  .henger {
-    width: 350px;
+  .simply {
+    width: 250px;
     aspect-ratio: 1/1;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,14 +76,14 @@ overflow: hidden;
   .luxor {
     background-image: url('../../../public/sponsors/luxor.png');
   }
-  .minode {
-    background-image: url('../../../public/sponsors/minode.png');
+  .mynode {
+    background-image: url('../../../public/clients-logos/mynode.png');
   }
   .neutronpay {
     background-image: url('../../../public/sponsors/neutronpay.png');
   }
-  .henger {
-    background-image: url('../../../public/sponsors/henger.png');
+  .simply {
+    background-image: url('../../../public/clients-logos/Simply-Bitcoin.svg');
   }
   
   /* Duplicar los elementos para crear el carrusel infinito */
@@ -95,7 +95,7 @@ overflow: hidden;
   }
   
   .sponsors-wrapper .luxor,
-  .sponsors-wrapper .minode,
+  .sponsors-wrapper .mynode,
   .sponsors-wrapper .neutronpay,
   .sponsors-wrapper .henger {
     align-items: center;
