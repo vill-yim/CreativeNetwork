@@ -10,7 +10,6 @@ import { Services } from './components/services/Services';
 import {SideBar} from './components/header/SideBar';
 import { sidebarStore } from './utils/sidebarstore';
 
-// Custom hook to detect scroll direction
 const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState('up');
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -20,10 +19,8 @@ const useScrollDirection = () => {
       const currentScrollY = window.scrollY;
       
       if (currentScrollY > lastScrollY) {
-        // Scrolling down
         setScrollDirection('down');
       } else if (currentScrollY < lastScrollY) {
-        // Scrolling up
         setScrollDirection('up');
       }
       

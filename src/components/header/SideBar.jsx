@@ -25,6 +25,7 @@ export const SideBar = () => {
   return (
     <div className={styles["sidebar"]}>
       <nav className={styles["nav-side"]}>
+           
         <ul>
           {["Home", "Services", "Portfolio"].map((item, idx) => (
             <Link
@@ -39,7 +40,7 @@ export const SideBar = () => {
               {item === "Services" &&  (
                 <>
                 <>
-                  <div className={styles["flag-down"]}></div>
+                  <div className={styles["flag-down"]}  onClick={() => handleServiceClick(subIdx)}></div>
                  
                 </>
                 
@@ -73,6 +74,25 @@ export const SideBar = () => {
             </Link>
           ))}
         </ul>
+        <div className={styles["redes"]}>
+                  <ul>
+                    <a
+                      target="blank"
+                      href="https://www.instagram.com/creativenetwork_21/"
+                      className={styles["red-ig"]}
+                    ></a>
+                    <a
+                      target="blank"
+                      href="https://www.linkedin.com/company/creative-network-live/"
+                      className={styles["red-lkd"]}
+                    ></a>
+                    <a
+                      target="blank"
+                      href="https://twitter.com/cnl_btc21"
+                      className={styles["red-x"]}
+                    ></a>
+                  </ul>
+                </div>
       </nav>
     </div>
   );

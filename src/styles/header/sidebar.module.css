@@ -2,10 +2,11 @@
 
 
 .sidebar {
-    padding: 1rem 0;
-    width: 210px;
-    max-width: 100%;
-    background: #181716;
+  padding: 1rem 0;
+  width: 210px;
+  max-width: 100%;
+  background: #181716;
+  justify-self: end;
   }
   
   .nav-header nav {
@@ -13,7 +14,59 @@
     width: 300px;
     max-width: 100%;
   }
+  /*-----------------------------------------*/
+
+
+  .redes {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 100%;
+  }
   
+  .redes ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-center;
+  }
+  
+  .red-ig,
+  .red-lkd,
+  .red-x {
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    margin:0 3% ;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    background-size: contain;
+  }
+  
+  .red-ig {
+    background-image: url(".././../../public/redes/ig.png");
+  }
+  .red-lkd {
+    background-image: url(".././../../public/redes/lkdin.png");
+  }
+  .red-x {
+    background-image: url(".././../../public/redes/x.png");
+  }
+  
+  .red-ig:hover{
+    filter: drop-shadow(1px 1px 1px #FFA200);
+  }
+  .red-lkd:hover{
+    filter: drop-shadow(1px 1px 1px #FFA200);
+  }
+  .red-x:hover{
+    filter: drop-shadow(1px 1px 1px #FFA200);
+  }
+  
+
+
+  /*-------------*/
+
   .nav-header ul {
     display: flex;
     text-decoration: none;
@@ -56,6 +109,7 @@
   .flag-down {
     width: 20px;
     height: 20px;
+    margin: .35rem 0 0 .2rem;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -65,7 +119,7 @@
   .list-service{
     font-family: poppins;
     width: 190px;
-    margin-left: 10%;
+    margin-left: 15%;
     text-align: start;
     color: #ffffff;
     justify-content: center;
@@ -109,8 +163,8 @@ color:  #FFD29A;
   
   @media (min-width:680px) {
     
-  .sidebar{
-    display: none;
-  }
-    
-  }
+    .sidebar{
+      display: none;
+    }
+      
+    } 

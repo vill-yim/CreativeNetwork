@@ -18,7 +18,7 @@ export const Cover = () => {
 
       <div className={styles["content-video"]}></div>
 
-      <div className={styles["btn-cover1"]}>
+      <div className={styles["btn-cover"]}>
         <BtnCover text={'Book a call'}/>
       </div>
 

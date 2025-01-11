@@ -9,33 +9,30 @@
   .aboutus{
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem 0;
-
+    padding: 1rem 0;
+    margin: 1rem 0;
     justify-content: center;
   }
   
   .ourwork{
-    min-height: 100vh;
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto;
+    padding: 1rem 0;
     justify-content: center;
 
   }
 .calendary,.ourprocess{
-    min-height: 100vh;
     width: 100%;
-
-    margin: 0 auto;
+    margin: 1rem auto;
+    padding: 1rem auto;
     justify-content: center;
   }
   .wemake{
      width: 100%;
-    display: flex;
-    margin: 4vw auto;
-    max-height: 100%;
-    align-items: center;
-    max-height: 100%;
-    justify-content: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 0;
   }
   
   
@@ -44,8 +41,7 @@
     background: #F7931A;
     display: flex;
     padding: 1.5rem 0;
-
-    min-height: 100vh;
+    margin-top: 1rem;
     align-items: center;
     justify-content: center;
   }

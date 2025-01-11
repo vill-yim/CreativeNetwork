@@ -10,12 +10,7 @@ export const Header = () => {
   const setSideBar = sidebarStore((state) => state.setSideBar);
   return (
     <div className={styles["header"]}>
-      <div className={styles["menu-mobile"]} onClick={() => setSideBar()}>
-        <img
-          src="https://img.icons8.com/ios-filled/30/FFFFFF/menu--v1.png"
-          alt=""
-        />
-      </div>
+   
 
       <Link to="/" className={styles["content-logo"]}>
         <div className={styles["logo"]}></div>
@@ -49,6 +44,16 @@ export const Header = () => {
         <div className={styles["btn-header"]}>
           <BtnHeader text={"Contact Us"} />
         </div>
+      </div>
+
+      <div className={styles["menu-mobile"]} onClick={() => setSideBar()}>
+      <div className={styles["btn-header"]}>
+          <BtnHeader text={"Contact Us"} />
+        </div>
+        <img
+          src="https://img.icons8.com/ios-filled/45/FFFFFF/menu--v1.png"
+          alt=""
+        />
       </div>
     </div>
   );

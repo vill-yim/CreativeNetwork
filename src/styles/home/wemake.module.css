@@ -13,7 +13,7 @@
 .section-wemake {
   width: 1600px;
   max-width: 100%;
-  margin: 10px auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,7 +28,7 @@
   -webkit-background-clip: text;
   color: transparent;
   font-family: StretchPro;
-
+  padding: 1rem 0;
   font-kerning: none;
   font-variant-ligatures: none;
   margin-bottom: 20px;

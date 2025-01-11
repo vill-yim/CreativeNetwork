@@ -4,19 +4,17 @@
   max-width: 100%;
   display: flex;
   justify-content: center;
-
+justify-self: center;
   height: 60px;
 }
 
 .btn-cover {
   height: 80px;
-  max-width: 280px;
   width: 100%;
   align-items: center;
   cursor: pointer;
   background: linear-gradient(30deg, #000 35%, #ea8b19 73%);
   position: relative;
-  
   font-weight: 900;
   text-align: center;
   color: white;
@@ -173,7 +171,7 @@
 .box {
   width: 210px;
   max-width: 100%;
-  padding: 12px;
+  padding: 12px 0;
   height: 60px;
   transition: .5s linear;
   position: relative;
