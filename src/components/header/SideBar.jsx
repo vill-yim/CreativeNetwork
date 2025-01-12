@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { sidebarStore } from "../../utils/sidebarstore";
 import { Link } from "react-router-dom";
 import styles from "../../styles/header/sidebar.module.css";
 import { serviceStore, allServiceStore } from "../../utils/serviceStore";
 
 export const SideBar = () => {
+  const {sideBar}= sidebarStore()
   const { setServices, services } = serviceStore();
   const { allServices,youtube,studio,uxui,organic,web } = allServiceStore();
   const [seleccionado, setSeleccionado] = useState( youtube | studio | uxui | organic | web );
@@ -23,9 +25,9 @@ export const SideBar = () => {
   };
 
   return (
-    <div className={styles["sidebar"]}>
+    <div className={`${sideBar ? styles["show-sidebar"]: styles["hide-sidebar"]}`}>
       <nav className={styles["nav-side"]}>
-           
+  
         <ul>
           {["Home", "Services", "Portfolio"].map((item, idx) => (
             <Link
@@ -44,8 +46,8 @@ export const SideBar = () => {
                  
                 </>
                 
-                {item && services && (
-                    <div className={styles["list-service"]}>
+                {item && (
+                    <div className={`${services ? styles["list-service"] : styles["hide-services"]}`}>
                       <ul>
                         {[
                           "Youtube",
@@ -92,7 +94,7 @@ export const SideBar = () => {
                       className={styles["red-x"]}
                     ></a>
                   </ul>
-                </div>
+                </div>  
       </nav>
     </div>
   );

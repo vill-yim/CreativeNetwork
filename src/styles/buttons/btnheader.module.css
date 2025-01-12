@@ -10,8 +10,10 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: CreatoDisplayBold;
     transform-origin: center;
-  
+  font-weight: 900;
+  text-decoration: none;
     padding: 1rem 2rem;
     background-color: transparent;
 

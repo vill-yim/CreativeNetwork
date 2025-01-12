@@ -110,8 +110,14 @@
   display: none;
 }
 
-@media (max-width:680px) {
+@media (max-width:740px) {
     
+.btn-header{
+  width: 160px;
+  max-width: 100%;
+}
+
+
 .content-logo{
   width: 90px;
 }

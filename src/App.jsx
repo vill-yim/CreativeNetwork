@@ -3,18 +3,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from "./styles/App.module.css";
 import { Header } from "./components/header/Header";
 import { Portfolio } from "./components/portfolio/Portfolio";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Home } from "./components/home/Home";
 import { Footer } from "./components/footer/Footer";
 import { Services } from './components/services/Services';
 import {SideBar} from './components/header/SideBar';
-import { sidebarStore } from './utils/sidebarstore';
+import {Form} from './components/form/Form';
 
 const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState('up');
   const [lastScrollY, setLastScrollY] = useState(0);
 
+
   useEffect(() => {
+
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
@@ -39,7 +42,6 @@ const useScrollDirection = () => {
 
 function App() {
   const scrollDirection = useScrollDirection();
-const {sideBar} = sidebarStore()
   return (
     <div className={styles["content-app"]}>
       <AnimatePresence>
@@ -52,10 +54,13 @@ const {sideBar} = sidebarStore()
             transition={{ type: "tween", duration: 0.3 }}
           >
             <Header />
-            {sideBar && <SideBar /> }
+            <SideBar /> 
           </motion.div>
         )}
       </AnimatePresence>
+
+
+{useLocation().pathname.includes("form") && <Form /> }
 
       <div className={styles["pages"]}>
         <Routes>
