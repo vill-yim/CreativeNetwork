@@ -120,10 +120,11 @@
 
 
 .content-logo{
-  width: 90px;
+    margin-left: .5rem;
+    width: 90px;
 }
 
-  .logo{
+.logo{
     margin: 0 auto;
     width: 80px;
     aspect-ratio: 9/3;
