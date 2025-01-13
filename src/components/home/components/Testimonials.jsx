@@ -10,9 +10,13 @@ const RenderTrget = () => {
       <div className={styles["content-target"]}>
         <div className={styles["testimonial"]}>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            soluta labore, nostrum eos maiores consequuntur delectus mollitia
-            tempora explicabo!.
+          "The RoninDojo team has loved working with Creative Network for many things such as our website, branding, tradeshow booth vinyl backgrounds in Miami and Prague, and more. 
+          </p>
+          <p>
+          They are quick to get the things designed, easy to work with, and very responsive if changes are needed.
+          </p>
+          <p>
+          We love how they will deliver quickly and for the right price!"
           </p>
         </div>
 
@@ -20,7 +24,7 @@ const RenderTrget = () => {
           <div className={styles["name-descript"]}>
             <div className={styles["img"]}></div>
             <div className={styles["name"]}>
-              <h5>Lorem Doloriel</h5>
+              <h5>RoninDojo</h5>
               <p>description about this</p>
             </div>
           </div>
