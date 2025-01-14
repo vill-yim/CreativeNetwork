@@ -1,10 +1,25 @@
-
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: lazy 1s linear;
+}
 
 .cover{
     width: 100%;
-    margin: 0 auto;
+  margin: 0 auto;
     justify-content: center;
   }
+
+
+@keyframes lazy {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
   
   .aboutus{
     width: 100%;

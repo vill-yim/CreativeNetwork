@@ -9,7 +9,7 @@ import styles from '../../styles/home/home.module.css'
 
 export const Home = () => {
   return (
-    <>
+    <div className={styles["home"]}>
       <div className={styles["cover"]}>
         <Cover />
       </div>
@@ -37,6 +37,6 @@ export const Home = () => {
         <Calendary />
       </div>
  
-    </>
+    </div>
   )
 }

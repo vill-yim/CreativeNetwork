@@ -62,7 +62,7 @@ function App() {
 
 {useLocation().pathname.includes("form") && <Form /> }
 
-      <div className={styles["pages"]}>
+      <div  className={styles["pages"]}>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/portfolio" element={<Portfolio/>}/>

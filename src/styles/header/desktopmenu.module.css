@@ -31,7 +31,7 @@
 
 .link-header:hover {
   cursor: pointer;
-  color: #f7931a;
+  color: #FFD29A;
   transition: all 0.5s ease-out;
 }
 .dropdown {
@@ -53,9 +53,24 @@
   color: #ffffff;
 }
 
+.services-drop-select{
+  text-align: center;
+  width:100%;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: CreatoDisplayBold;
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  margin:0 20px 0 10px;
+  color: #f7931a;
+  
+}
+
 .services-drop:hover {
   cursor: pointer;
-  color: #f7931a;
+  color: #FFD29A;
   transition: all 0.5s ease-out;
 }
 
@@ -118,13 +133,35 @@
 color:  #FFD29A;
 
 }
-
-.selected {
+/*----------------------*/
+.link-select {
+  max-width: 100%;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: CreatoDisplayBold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
   color: #f7931a;
 }
 
+.link-select:hover{
+  color: #f7931a;
+  
+}
+.selected{
+  color: #f7931a;
+}
 .selected:hover{
   color: #f7931a;
+
+}
+
+.none{
+  color: #ffffff;
 }
 
 .hide-menu{

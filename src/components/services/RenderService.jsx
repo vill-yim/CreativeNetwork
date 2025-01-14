@@ -46,7 +46,7 @@ export const RenderService = ({
     ],
   };
   return (
-    <div>
+    <>
       <div className={styles["cover-services"]}>
         <div className={styles["descript-cover"]}>
           <div className={styles["title-cover"]}>
@@ -73,6 +73,6 @@ export const RenderService = ({
  {sliders}
     </div>
       </div>
-    </div>
+    </>
   );
 };

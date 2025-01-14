@@ -19,7 +19,7 @@ showPortfolio("design")
   };
 
   return (
-    <div className={styles["content-portfolio"]}>
+    <div className={  styles["content-portfolio"]}>
       <div className={styles["cover-portfolio"]}>
         <div className={styles["title-portfolio"]}>
           <h4>Portfolio</h4>

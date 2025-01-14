@@ -1,32 +1,27 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate,useLocation } from "react-router-dom";
 import styles from "../../styles/header/desktopmenu.module.css";
 import { allServiceStore } from "../../utils/serviceStore";
 
+
 export const Navbar = () => {
-  const { allServices } = allServiceStore();
+  const location = useLocation();
+  const {allservices}=allServiceStore()
   const [serviceSeleccionado, setServiceSeleccionado] = useState(null);
-  const [enlaceSeleccionado, setEnlaceSeleccionado] = useState({
-    home: false,
-    services: false,
-    portfolio: false,
-  });
+  const [ruteSelect, setRuteSelect] = useState(false);
   const navigate = useNavigate();
+  const { allServices } = allServiceStore();
 
   const handleServiceClick = async (idx) => {
-    await navigate("/services");
+    navigate("/services")
     setServiceSeleccionado(idx);
     const serviceKeys = ["youtube", "studio", "uxui", "organic", "web"];
+    allServices(idx)
     await allServices(serviceKeys[idx]);
   };
 
-  const handleEnlaceClick = (enlace) => {
-    setEnlaceSeleccionado({
-      home: false,
-      services: false,
-      portfolio: false,
-      [enlace]: true, 
-    });
+  const isActive = (path) => {
+    return location.pathname === path;
   };
 
   return (
@@ -36,29 +31,34 @@ export const Navbar = () => {
           <li>
             <Link
               to={"/"}
-              className={`${styles["link-header"]} ${enlaceSeleccionado.home ? styles["seleccionado-header"] : ""}`}
-              onClick={() => handleEnlaceClick("home")} 
+              className={isActive("/") ? styles["link-select"] : styles["link-header"]}
             >
               Home
             </Link>
           </li>
 
           <li className={styles["dropdown"]}>
-            <Link
-              to={"/services"}
-              className={`${styles["services-drop"]} ${enlaceSeleccionado.services ? styles["seleccionado-header"] : ""}`}
-              onClick={() => handleEnlaceClick("services")} 
+            <span
+              className={`${location.pathname.includes("/services") ? styles["services-drop-select"] : styles["services-drop"]}`}
             >
               Services
               <div className={styles["flag-down"]}></div>
-            </Link>
+            </span>
             <ul className={`${styles["dropdown-menu"]}`}>
               <div className={`${styles["wraper-menu"]}`}>
-                {["Youtube", "Creative Studio", "Ux/ui", "Organic", "Web Design"].map((item, idx) => (
+                {[
+                  "Youtube",
+                  "Creative Studio",
+                  "Ux/ui",
+                  "Organic",
+                  "Web Design",
+                ].map((item, idx) => (
                   <li
                     key={idx}
                     onClick={() => handleServiceClick(idx)}
-                    className={`${styles["dropdown-item"]} ${serviceSeleccionado === idx ? styles["selected"] : ""}`}
+                    className={`${styles["dropdown-item"]} ${
+                      serviceSeleccionado === idx ? styles["selected"] : ""
+                    } ${!location.pathname.includes('services') && styles["none"] }`}
                   >
                     {item}
                   </li>
@@ -70,8 +70,7 @@ export const Navbar = () => {
           <li>
             <Link
               to={"/portfolio"}
-              className={`${styles["link-header"]} ${enlaceSeleccionado.portfolio ? styles["seleccionado-header"] : ""}`}
-              onClick={() => handleEnlaceClick("portfolio")}  // Cambiado para manejar correctamente el enlace
+              className={isActive("/portfolio") ? styles["link-select"] : styles["link-header"]}
             >
               Portfolio
             </Link>
