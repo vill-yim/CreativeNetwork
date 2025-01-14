@@ -3,25 +3,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-const RenderTrget = () => {
+const RenderTarget = ({ testimonial, name, description }) => {
   return (
     <div className={styles["target-testimonial"]}>
       <div className={styles["content-target"]}>
         <div className={styles["testimonial"]}>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            soluta labore, nostrum eos maiores consequuntur delectus mollitia
-            tempora explicabo!.
-          </p>
+          <p>{testimonial}</p>
         </div>
 
         <div className={styles["name-testimoni"]}>
           <div className={styles["name-descript"]}>
             <div className={styles["img"]}></div>
             <div className={styles["name"]}>
-              <h5>Lorem Doloriel</h5>
-              <p>description about this</p>
+              <h5>{name}</h5>
+              <p>{description}</p>
             </div>
           </div>
           <div className={styles["extra"]}></div>
@@ -30,6 +25,7 @@ const RenderTrget = () => {
     </div>
   );
 };
+
 
 const Responsive = () => {
   const settings = {
@@ -72,10 +68,36 @@ const Responsive = () => {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <RenderTrget />
-        <RenderTrget />
-        <RenderTrget />
-        <RenderTrget />
+   
+      <RenderTarget
+          name={"Camilo"}
+          description={"Director de diseño"}
+          testimonial={
+            "Lorem, ipsum sit amet consectetur adipisicing elit. Voluptate soluta labore, nostrum eos maiores consequuntur delectus mollitia tempora explicabo!."
+          }
+        />
+        
+        <RenderTarget
+          name={"Lorem Motosa P."}
+          description={"lorem impsu dolrem rem"}
+          testimonial={
+            "Lorem, ipsum sit amet consectetur adipisicing elit. Voluptate soluta labore, nostrum eos maiores consequuntur delectus mollitia tempora explicabo!."
+          }
+        />
+        <RenderTarget
+          name={"Monole Rotero mo"}
+          description={"Lorem impsu dolorem rem"}
+          testimonial={
+            "Lorem, ipsum sit amet consectetur adipisicing elit. Voluptate soluta labore, nostrum eos maiores consequuntur delectus mollitia tempora explicabo!."
+          }
+        />
+        <RenderTarget
+          name={"Lorea Maniro S."}
+          description={"Lorem impsu dolorem rem"}
+          testimonial={
+            "Lorem, ipsum sit amet consectetur adipisicing elit. Voluptate soluta labore, nostrum eos maiores consequuntur delectus mollitia tempora explicabo!."
+          }
+        />
       </Slider>
     </div>
   );
