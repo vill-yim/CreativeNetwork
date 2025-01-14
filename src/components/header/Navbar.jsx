@@ -16,7 +16,7 @@ export const Navbar = () => {
     navigate("/services")
     setServiceSeleccionado(idx);
     const serviceKeys = ["youtube", "studio", "uxui", "organic", "web"];
-    allServices(idx)
+    await allServices(idx)
     await allServices(serviceKeys[idx]);
   };
 
