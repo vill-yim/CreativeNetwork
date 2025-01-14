@@ -48,7 +48,7 @@ export const Navbar = () => {
                   "Youtube",
                   "Creative Studio",
                   "Ux/ui",
-                  "Organic",
+                  "Organic Growth",
                   "Web Design",
                 ].map((item, idx) => (
                   <li
