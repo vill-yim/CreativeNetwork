@@ -6,18 +6,16 @@ import { allServiceStore } from "../../utils/serviceStore";
 
 export const Navbar = () => {
   const location = useLocation();
-  const {allservices}=allServiceStore()
   const [serviceSeleccionado, setServiceSeleccionado] = useState(null);
-  const [ruteSelect, setRuteSelect] = useState(false);
   const navigate = useNavigate();
   const { allServices } = allServiceStore();
 
   const handleServiceClick = async (idx) => {
-    navigate("/services")
     setServiceSeleccionado(idx);
     const serviceKeys = ["youtube", "studio", "uxui", "organic", "web"];
-    await allServices(idx)
     await allServices(serviceKeys[idx]);
+    console.log(serviceKeys[idx])
+    navigate("/services")
   };
 
   const isActive = (path) => {

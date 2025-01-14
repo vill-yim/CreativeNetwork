@@ -98,9 +98,7 @@ const RenderServiceUxuiTargets = () => {
 export const Services = () => {
 const {youtube,studio,web,uxui,organic,allServices}= allServiceStore()
 
-useEffect(()=>{
-  allServices("youtube")
-},[])
+
 
 
   return (
