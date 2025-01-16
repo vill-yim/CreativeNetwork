@@ -48,12 +48,125 @@ display: none;
 .nav-side {
   margin: 0 auto;
   width: 300px;
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   max-width: 100%;
 }
+
+.link-side {
+  width: 180px;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: poppins;
+  cursor: pointer;
+  display: flex;
+  padding: 0 0 .5rem .5rem;
+  margin: 1.8rem 0 .5rem 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.seleccionado-side {
+  overflow: hidden;
+  max-width: 180px;
+  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: poppins;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  flex-wrap: wrap;
+  padding: 0 0 .5rem .5rem;
+  margin: 1.8rem 0 .5rem 0;
+  border-bottom: 1px solid #ffa200;
+  color: #f7931a;
+}
+
+.link-header:hover {
+  cursor: pointer;
+  color: #f7931a;
+  transition: all 0.5s ease-out;
+}
+
+.flag-down {
+  width: 20px;
+  height: 20px;
+  margin: 0.35rem 0 0 0.2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(".././../../public/extras/flag-down.png");
+}
+
+.hide-services {
+  display: none;
+}
+
+.list-service {
+  font-family: poppins;
+  width: 210px;
+  margin-bottom: 1rem;
+  margin-left: 13%;
+  text-align: start;
+  overflow: hidden;
+  color: #ffffff;
+  animation: service 0.5s linear;
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+}
+
+.list-service ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+.hide-services {
+  display: none;
+}
+
+.seleccionado-service {
+  color: #f7931a;
+  border-bottom: 1px solid #f7931a;
+}
+.list-service ul li {
+  animation: service 0.5s linear;
+  margin: .5rem auto;
+  padding: .5rem 0;
+}
+
+
+
+@keyframes service {
+  from{
+    margin-top: -10%;
+
+  }
+  to{
+    left: 0;
+  }
+}
+
+
+.list-service ul li:hover {
+  color: #ffd29a;
+}
+
+
+.link-side:hover {
+  color: #ffd29a;
+}
+
+
+
+.seleccionado-service:hover {
+  color: #f7931a;
+}
+
 /*-----------------------------------------*/
 
 .redes {
@@ -104,116 +217,3 @@ display: none;
 }
 
 /*-------------*/
-
-
-.link-side {
-  width: 180px;
-  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
-  text-decoration: none;
-  font-weight: 400;
-  font-family: poppins;
-  cursor: pointer;
-  display: flex;
-  padding: 0 0 .5rem .5rem;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #ffffff;
-  margin: 4vw 0 9vw 0;
-  color: #ffffff;
-}
-
-.seleccionado-side {
-  overflow: hidden;
-  max-width: 180px;
-  font-size: clamp(1.1rem, 1.2rem, 1.5rem);
-  text-decoration: none;
-  font-weight: 400;
-  font-family: poppins;
-  cursor: pointer;
-  display: flex;
-  transition: all 0.5s ease-in-out;
-  flex-wrap: wrap;
-  padding: 0 0 .5rem .5rem;
-  margin: 4vw 0 9vw 0;
-  border-bottom: 1px solid #ffa200;
-  color: #f7931a;
-}
-
-.link-header:hover {
-  cursor: pointer;
-  color: #f7931a;
-  transition: all 0.5s ease-out;
-}
-
-.flag-down {
-  width: 20px;
-  height: 20px;
-  margin: 0.35rem 0 0 0.2rem;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(".././../../public/extras/flag-down.png");
-}
-
-.hide-services {
-  display: none;
-}
-
-.list-service {
-  font-family: poppins;
-  width: 210px;
-  margin-left: 10%;
-  text-align: start;
-  overflow: hidden;
-  color: #ffffff;
-  animation: service 0.5s linear;
-  transition: all 0.5s ease-in-out;
-  justify-content: center;
-}
-
-.list-service ul {
-  overflow: hidden;
-  list-style: none;
-}
-
-.hide-services {
-  display: none;
-}
-
-.seleccionado-service {
-  color: #f7931a;
-  border-bottom: 1px solid #f7931a;
-}.list-service ul li {
-  animation: service 0.5s linear;
-  margin: .5rem auto;
-  padding: .5rem 0;
-}
-
-
-
-@keyframes service {
-  from{
-    margin-top: -10%;
-
-  }
-  to{
-    left: 0;
-  }
-}
-
-
-.list-service ul li:hover {
-  color: #ffd29a;
-}
-
-.seleccionado-service:hover {
-  color: #f7931a;
-}
-
-.link-side:hover {
-  color: #ffd29a;
-}
-
-.seleccionado-header {
-  text-decoration: none;
-  color: red;
-}
