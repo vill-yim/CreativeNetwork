@@ -14,13 +14,25 @@ export const Navbar = () => {
     setServiceSeleccionado(idx);
     const serviceKeys = ["youtube", "studio", "uxui", "organic", "web"];
     await allServices(serviceKeys[idx]);
-    console.log(serviceKeys[idx])
+    localStorage.setItem("idx", idx);
     navigate("/services")
   };
 
   const isActive = (path) => {
     return location.pathname === path;
   };
+
+
+useEffect(() => {
+  (() => {
+    const ix = localStorage.getItem("idx");
+    let i = Number(ix)
+    const keys = ["youtube", "studio", "uxui", "organic", "web"];
+    const key = keys[i]
+    allServices(key);
+  })();
+}, []);
+
 
   return (
     <div className={styles["nav-header"]}>
